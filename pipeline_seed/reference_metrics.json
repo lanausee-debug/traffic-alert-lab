@@ -1,0 +1,3130 @@
+{
+  "kind": "previously_analyzed_v1_numerical_reference_not_fresh_confirmation",
+  "forecast_validation": {
+    "by_seed": [
+      {
+        "mae_mph": 1.0350223300586943,
+        "mae_mph_by_horizon": [
+          0.7964525349641228,
+          1.0594325357308993,
+          1.2491819194810605
+        ],
+        "valid_targets": 144144
+      },
+      {
+        "mae_mph": 1.0299187815983673,
+        "mae_mph_by_horizon": [
+          0.7940140106492496,
+          1.0554438507971726,
+          1.2402984833486796
+        ],
+        "valid_targets": 144144
+      },
+      {
+        "mae_mph": 1.039340097663622,
+        "mae_mph_by_horizon": [
+          0.797337909695078,
+          1.064563674176299,
+          1.2561187091194892
+        ],
+        "valid_targets": 144144
+      }
+    ],
+    "three_seed_ensemble": {
+      "mae_mph": 1.0296987649135771,
+      "mae_mph_by_horizon": [
+        0.792190639187943,
+        1.0547850788087758,
+        1.2421205767440129
+      ],
+      "valid_targets": 144144
+    },
+    "last_visible_persistence": {
+      "mae_mph": 1.1751256699788921,
+      "mae_mph_by_horizon": [
+        0.8997272409734459,
+        1.2015528933297817,
+        1.424096875633449
+      ],
+      "valid_targets": 144144
+    }
+  },
+  "selected_forecast_epochs": [
+    {
+      "seed": 42,
+      "selected_epoch": 24
+    },
+    {
+      "seed": 43,
+      "selected_epoch": 25
+    },
+    {
+      "seed": 44,
+      "selected_epoch": 25
+    }
+  ],
+  "risk_validation": {
+    "persistent_target_Y": {
+      "global_calibration": {
+        "bce": 0.01381397063176677,
+        "brier": 0.003641246426559126,
+        "rows": 144000,
+        "positives": 2541
+      },
+      "group_calibration": {
+        "bce": 0.012164175036835194,
+        "brier": 0.0034610443981600986,
+        "rows": 144000,
+        "positives": 2541
+      },
+      "state_logistic": {
+        "bce": 0.011818154060127723,
+        "brier": 0.003573910008517035,
+        "rows": 144000,
+        "positives": 2541
+      },
+      "persistent_mlp": {
+        "bce": 0.013842716452266063,
+        "brier": 0.004035857512360496,
+        "rows": 144000,
+        "positives": 2541
+      }
+    },
+    "onset_target_Z": {
+      "onset_linear": {
+        "bce": 0.013987247199740541,
+        "brier": 0.003236488072629555,
+        "rows": 144000,
+        "positives": 495
+      },
+      "onset_mlp": {
+        "bce": 0.01235548482005336,
+        "brier": 0.002921930332964205,
+        "rows": 144000,
+        "positives": 495
+      }
+    }
+  },
+  "calibration_budgets": {
+    "natural": 0.09556993529120335,
+    "single_outage": 0.09258337481335324,
+    "group_outage": 0.07466401194625262
+  },
+  "settings": {
+    "dense_speed": {
+      "coarse": {
+        "threshold": -30.0,
+        "confirmation": 1,
+        "grid_index": 6
+      },
+      "fine": {
+        "threshold": -30.0,
+        "confirmation": 1,
+        "grid_index": 30
+      }
+    },
+    "global_calibration": {
+      "coarse": {
+        "threshold": 0.5,
+        "confirmation": 1,
+        "grid_index": 11
+      },
+      "fine": {
+        "threshold": 0.46,
+        "confirmation": 1,
+        "grid_index": 90
+      }
+    },
+    "group_calibration": {
+      "coarse": {
+        "threshold": 0.5,
+        "confirmation": 1,
+        "grid_index": 11
+      },
+      "fine": {
+        "threshold": 0.45,
+        "confirmation": 1,
+        "grid_index": 88
+      }
+    },
+    "state_logistic": {
+      "coarse": {
+        "threshold": 0.5,
+        "confirmation": 1,
+        "grid_index": 11
+      },
+      "fine": {
+        "threshold": 0.42,
+        "confirmation": 1,
+        "grid_index": 82
+      }
+    },
+    "persistent_mlp": {
+      "coarse": {
+        "threshold": 0.5,
+        "confirmation": 1,
+        "grid_index": 11
+      },
+      "fine": {
+        "threshold": 0.455,
+        "confirmation": 1,
+        "grid_index": 89
+      }
+    },
+    "onset_linear": {
+      "coarse": {
+        "threshold": 0.15,
+        "confirmation": 2,
+        "grid_index": 6
+      },
+      "fine": {
+        "threshold": 0.215,
+        "confirmation": 1,
+        "grid_index": 41
+      }
+    },
+    "onset_mlp": {
+      "coarse": {
+        "threshold": 0.2,
+        "confirmation": 2,
+        "grid_index": 7
+      },
+      "fine": {
+        "threshold": 0.165,
+        "confirmation": 2,
+        "grid_index": 31
+      }
+    }
+  },
+  "evaluation_dates": [
+    "2017-04-09",
+    "2017-04-10",
+    "2017-04-11",
+    "2017-04-12",
+    "2017-04-13",
+    "2017-04-14",
+    "2017-04-15",
+    "2017-04-16",
+    "2017-04-17",
+    "2017-04-18",
+    "2017-04-19",
+    "2017-04-20",
+    "2017-04-21",
+    "2017-04-22",
+    "2017-04-23",
+    "2017-04-24",
+    "2017-04-25",
+    "2017-04-26",
+    "2017-04-27",
+    "2017-04-28",
+    "2017-04-29",
+    "2017-04-30",
+    "2017-05-01",
+    "2017-05-02",
+    "2017-05-03",
+    "2017-05-04",
+    "2017-05-05",
+    "2017-05-06",
+    "2017-05-07",
+    "2017-05-08",
+    "2017-05-09",
+    "2017-05-10",
+    "2017-05-11",
+    "2017-05-12",
+    "2017-05-13",
+    "2017-05-14",
+    "2017-05-15",
+    "2017-05-16",
+    "2017-05-17",
+    "2017-05-18",
+    "2017-05-19",
+    "2017-05-20",
+    "2017-05-21",
+    "2017-05-22",
+    "2017-05-23",
+    "2017-05-24",
+    "2017-05-25",
+    "2017-05-26",
+    "2017-05-27",
+    "2017-05-28",
+    "2017-05-29",
+    "2017-05-30",
+    "2017-05-31",
+    "2017-06-01",
+    "2017-06-02",
+    "2017-06-03",
+    "2017-06-04",
+    "2017-06-05",
+    "2017-06-06",
+    "2017-06-07",
+    "2017-06-08",
+    "2017-06-09",
+    "2017-06-10",
+    "2017-06-11",
+    "2017-06-12",
+    "2017-06-13",
+    "2017-06-14",
+    "2017-06-15",
+    "2017-06-16",
+    "2017-06-17",
+    "2017-06-18",
+    "2017-06-19",
+    "2017-06-20",
+    "2017-06-21",
+    "2017-06-22",
+    "2017-06-23",
+    "2017-06-24",
+    "2017-06-25",
+    "2017-06-26",
+    "2017-06-27",
+    "2017-06-28",
+    "2017-06-29",
+    "2017-06-30"
+  ],
+  "evaluation": {
+    "dense_speed": {
+      "coarse": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 175.0,
+          "detected": 567.0,
+          "false": 397.0,
+          "duplicate": 248.0,
+          "late": 392.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2600297176820208,
+          "detection_recall": 0.8424962852897474,
+          "false_per_valid_station_day": 0.1994536377053068,
+          "missed_events": 106,
+          "warning_recall_at_least10": 0.09806835066864784,
+          "warning_lead_counts": {
+            "5": 109,
+            "10": 31,
+            "15": 35
+          },
+          "warning_lead_mean_minutes": 7.885714285714286,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 1.211734693877551,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9568,
+            "false_positives": 1391,
+            "false_negatives": 1395,
+            "recall": 0.8727538082641613,
+            "precision": 0.8730723606168446,
+            "false_positive_rate": 0.0024738432426376043
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9568,
+            "false_positives": 1391,
+            "false_negatives": 1395,
+            "recall": 0.8727538082641613,
+            "precision": 0.8730723606168446,
+            "false_positive_rate": 0.0024738432426376043
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 167.0,
+          "detected": 547.0,
+          "false": 392.0,
+          "duplicate": 231.0,
+          "late": 380.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.24814264487369986,
+          "detection_recall": 0.812778603268945,
+          "false_per_valid_station_day": 0.19694162715486213,
+          "missed_events": 126,
+          "warning_recall_at_least10": 0.09658246656760773,
+          "warning_lead_counts": {
+            "5": 102,
+            "10": 31,
+            "15": 34
+          },
+          "warning_lead_mean_minutes": 7.9640718562874255,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 2.513157894736842,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9177,
+            "false_positives": 1357,
+            "false_negatives": 1786,
+            "recall": 0.8370883882149047,
+            "precision": 0.87117903930131,
+            "false_positive_rate": 0.0024133754710706176
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 89,
+            "false_positives": 3,
+            "false_negatives": 462,
+            "recall": 0.16152450090744103,
+            "precision": 0.967391304347826,
+            "false_positive_rate": 0.00012855673637298594
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 9088,
+            "false_positives": 1354,
+            "false_negatives": 1324,
+            "recall": 0.8728390318862851,
+            "precision": 0.8703313541467151,
+            "false_positive_rate": 0.0025123064048969564
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 149.0,
+          "detected": 498.0,
+          "false": 320.0,
+          "duplicate": 194.0,
+          "late": 349.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2213967310549777,
+          "detection_recall": 0.7399702823179792,
+          "false_per_valid_station_day": 0.1607686752284589,
+          "missed_events": 175,
+          "warning_recall_at_least10": 0.07726597325408618,
+          "warning_lead_counts": {
+            "5": 97,
+            "10": 26,
+            "15": 26
+          },
+          "warning_lead_mean_minutes": 7.617449664429531,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 4.025787965616046,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8262,
+            "false_positives": 1225,
+            "false_negatives": 2701,
+            "recall": 0.753625832345161,
+            "precision": 0.8708759354906714,
+            "false_positive_rate": 0.0021786182402811394
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 134,
+            "false_positives": 26,
+            "false_negatives": 1562,
+            "recall": 0.07900943396226415,
+            "precision": 0.8375,
+            "false_positive_rate": 0.00037161437861788036
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 8128,
+            "false_positives": 1199,
+            "false_negatives": 1139,
+            "recall": 0.8770907521312183,
+            "precision": 0.8714484828991101,
+            "false_positive_rate": 0.0024354177584406827
+          }
+        }
+      },
+      "fine": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 175.0,
+          "detected": 567.0,
+          "false": 397.0,
+          "duplicate": 248.0,
+          "late": 392.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2600297176820208,
+          "detection_recall": 0.8424962852897474,
+          "false_per_valid_station_day": 0.1994536377053068,
+          "missed_events": 106,
+          "warning_recall_at_least10": 0.09806835066864784,
+          "warning_lead_counts": {
+            "5": 109,
+            "10": 31,
+            "15": 35
+          },
+          "warning_lead_mean_minutes": 7.885714285714286,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 1.211734693877551,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9568,
+            "false_positives": 1391,
+            "false_negatives": 1395,
+            "recall": 0.8727538082641613,
+            "precision": 0.8730723606168446,
+            "false_positive_rate": 0.0024738432426376043
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9568,
+            "false_positives": 1391,
+            "false_negatives": 1395,
+            "recall": 0.8727538082641613,
+            "precision": 0.8730723606168446,
+            "false_positive_rate": 0.0024738432426376043
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 167.0,
+          "detected": 547.0,
+          "false": 392.0,
+          "duplicate": 231.0,
+          "late": 380.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.24814264487369986,
+          "detection_recall": 0.812778603268945,
+          "false_per_valid_station_day": 0.19694162715486213,
+          "missed_events": 126,
+          "warning_recall_at_least10": 0.09658246656760773,
+          "warning_lead_counts": {
+            "5": 102,
+            "10": 31,
+            "15": 34
+          },
+          "warning_lead_mean_minutes": 7.9640718562874255,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 2.513157894736842,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9177,
+            "false_positives": 1357,
+            "false_negatives": 1786,
+            "recall": 0.8370883882149047,
+            "precision": 0.87117903930131,
+            "false_positive_rate": 0.0024133754710706176
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 89,
+            "false_positives": 3,
+            "false_negatives": 462,
+            "recall": 0.16152450090744103,
+            "precision": 0.967391304347826,
+            "false_positive_rate": 0.00012855673637298594
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 9088,
+            "false_positives": 1354,
+            "false_negatives": 1324,
+            "recall": 0.8728390318862851,
+            "precision": 0.8703313541467151,
+            "false_positive_rate": 0.0025123064048969564
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 149.0,
+          "detected": 498.0,
+          "false": 320.0,
+          "duplicate": 194.0,
+          "late": 349.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2213967310549777,
+          "detection_recall": 0.7399702823179792,
+          "false_per_valid_station_day": 0.1607686752284589,
+          "missed_events": 175,
+          "warning_recall_at_least10": 0.07726597325408618,
+          "warning_lead_counts": {
+            "5": 97,
+            "10": 26,
+            "15": 26
+          },
+          "warning_lead_mean_minutes": 7.617449664429531,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 4.025787965616046,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8262,
+            "false_positives": 1225,
+            "false_negatives": 2701,
+            "recall": 0.753625832345161,
+            "precision": 0.8708759354906714,
+            "false_positive_rate": 0.0021786182402811394
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 134,
+            "false_positives": 26,
+            "false_negatives": 1562,
+            "recall": 0.07900943396226415,
+            "precision": 0.8375,
+            "false_positive_rate": 0.00037161437861788036
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 8128,
+            "false_positives": 1199,
+            "false_negatives": 1139,
+            "recall": 0.8770907521312183,
+            "precision": 0.8714484828991101,
+            "false_positive_rate": 0.0024354177584406827
+          }
+        }
+      }
+    },
+    "global_calibration": {
+      "coarse": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 128.0,
+          "detected": 552.0,
+          "false": 353.0,
+          "duplicate": 268.0,
+          "late": 424.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.1901931649331352,
+          "detection_recall": 0.8202080237741456,
+          "false_per_valid_station_day": 0.1773479448613937,
+          "missed_events": 121,
+          "warning_recall_at_least10": 0.0787518573551263,
+          "warning_lead_counts": {
+            "5": 75,
+            "10": 26,
+            "15": 27
+          },
+          "warning_lead_mean_minutes": 8.125,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 1.6273584905660377,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9350,
+            "false_positives": 1215,
+            "false_negatives": 1613,
+            "recall": 0.8528687403083097,
+            "precision": 0.8849976336961666,
+            "false_positive_rate": 0.002160833601584967
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9350,
+            "false_positives": 1215,
+            "false_negatives": 1613,
+            "recall": 0.8528687403083097,
+            "precision": 0.8849976336961666,
+            "false_positive_rate": 0.002160833601584967
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 125.0,
+          "detected": 537.0,
+          "false": 342.0,
+          "duplicate": 249.0,
+          "late": 412.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.18573551263001487,
+          "detection_recall": 0.7979197622585439,
+          "false_per_valid_station_day": 0.17182152165041542,
+          "missed_events": 136,
+          "warning_recall_at_least10": 0.08023774145616643,
+          "warning_lead_counts": {
+            "5": 71,
+            "10": 26,
+            "15": 28
+          },
+          "warning_lead_mean_minutes": 8.28,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 2.7427184466019416,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8966,
+            "false_positives": 1180,
+            "false_negatives": 1997,
+            "recall": 0.8178418316154338,
+            "precision": 0.8836980090676129,
+            "false_positive_rate": 0.002098587366148363
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 84,
+            "false_positives": 1,
+            "false_negatives": 467,
+            "recall": 0.15245009074410162,
+            "precision": 0.9882352941176471,
+            "false_positive_rate": 4.2852245457661984e-05
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 8882,
+            "false_positives": 1179,
+            "false_negatives": 1530,
+            "recall": 0.8530541682673838,
+            "precision": 0.8828148295398072,
+            "false_positive_rate": 0.0021875991516791078
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 113.0,
+          "detected": 486.0,
+          "false": 280.0,
+          "duplicate": 212.0,
+          "late": 373.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.16790490341753342,
+          "detection_recall": 0.7221396731054978,
+          "false_per_valid_station_day": 0.14067259082490152,
+          "missed_events": 187,
+          "warning_recall_at_least10": 0.06835066864784546,
+          "warning_lead_counts": {
+            "5": 67,
+            "10": 21,
+            "15": 25
+          },
+          "warning_lead_mean_minutes": 8.141592920353983,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 4.2359249329758715,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8051,
+            "false_positives": 1065,
+            "false_negatives": 2912,
+            "recall": 0.7343792757456901,
+            "precision": 0.8831724440544099,
+            "false_positive_rate": 0.0018940640211423784
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 127,
+            "false_positives": 26,
+            "false_negatives": 1569,
+            "recall": 0.07488207547169812,
+            "precision": 0.8300653594771242,
+            "false_positive_rate": 0.00037161437861788036
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 7924,
+            "false_positives": 1039,
+            "false_negatives": 1343,
+            "recall": 0.8550771554980037,
+            "precision": 0.8840789914091264,
+            "false_positive_rate": 0.0021104245629857124
+          }
+        }
+      },
+      "fine": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 179.0,
+          "detected": 570.0,
+          "false": 401.0,
+          "duplicate": 238.0,
+          "late": 391.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2659732540861813,
+          "detection_recall": 0.8469539375928677,
+          "false_per_valid_station_day": 0.20146324614566252,
+          "missed_events": 103,
+          "warning_recall_at_least10": 0.0950965824665676,
+          "warning_lead_counts": {
+            "5": 115,
+            "10": 30,
+            "15": 34
+          },
+          "warning_lead_mean_minutes": 7.737430167597766,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 1.2020460358056266,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9592,
+            "false_positives": 1432,
+            "false_negatives": 1371,
+            "recall": 0.874942990057466,
+            "precision": 0.8701015965166908,
+            "false_positive_rate": 0.0025467602612919116
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9592,
+            "false_positives": 1432,
+            "false_negatives": 1371,
+            "recall": 0.874942990057466,
+            "precision": 0.8701015965166908,
+            "false_positive_rate": 0.0025467602612919116
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 172.0,
+          "detected": 551.0,
+          "false": 399.0,
+          "duplicate": 220.0,
+          "late": 379.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2555720653789004,
+          "detection_recall": 0.8187221396731055,
+          "false_per_valid_station_day": 0.20045844192548468,
+          "missed_events": 122,
+          "warning_recall_at_least10": 0.09361069836552749,
+          "warning_lead_counts": {
+            "5": 109,
+            "10": 30,
+            "15": 33
+          },
+          "warning_lead_mean_minutes": 7.790697674418604,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 2.4934036939313984,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9209,
+            "false_positives": 1396,
+            "false_negatives": 1754,
+            "recall": 0.8400072972726443,
+            "precision": 0.8683639792550684,
+            "false_positive_rate": 0.0024827355619856904
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 89,
+            "false_positives": 4,
+            "false_negatives": 462,
+            "recall": 0.16152450090744103,
+            "precision": 0.956989247311828,
+            "false_positive_rate": 0.00017140898183064793
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 9120,
+            "false_positives": 1392,
+            "false_negatives": 1292,
+            "recall": 0.8759124087591241,
+            "precision": 0.867579908675799,
+            "false_positive_rate": 0.0025828142655956892
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 156.0,
+          "detected": 502.0,
+          "false": 319.0,
+          "duplicate": 193.0,
+          "late": 346.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.23179791976225855,
+          "detection_recall": 0.7459138187221397,
+          "false_per_valid_station_day": 0.16026627311836994,
+          "missed_events": 171,
+          "warning_recall_at_least10": 0.0787518573551263,
+          "warning_lead_counts": {
+            "5": 103,
+            "10": 26,
+            "15": 27
+          },
+          "warning_lead_mean_minutes": 7.564102564102564,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 4.017341040462428,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8283,
+            "false_positives": 1254,
+            "false_negatives": 2680,
+            "recall": 0.7555413664143027,
+            "precision": 0.8685121107266436,
+            "false_positive_rate": 0.00223019369250004
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 134,
+            "false_positives": 26,
+            "false_negatives": 1562,
+            "recall": 0.07900943396226415,
+            "precision": 0.8375,
+            "false_positive_rate": 0.00037161437861788036
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 8149,
+            "false_positives": 1228,
+            "false_negatives": 1118,
+            "recall": 0.8793568576669903,
+            "precision": 0.8690412711954782,
+            "false_positive_rate": 0.002494322775116896
+          }
+        }
+      }
+    },
+    "group_calibration": {
+      "coarse": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 108.0,
+          "detected": 550.0,
+          "false": 332.0,
+          "duplicate": 291.0,
+          "late": 442.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.16047548291233285,
+          "detection_recall": 0.8172362555720654,
+          "false_per_valid_station_day": 0.16679750054952608,
+          "missed_events": 123,
+          "warning_recall_at_least10": 0.0713224368499257,
+          "warning_lead_counts": {
+            "5": 60,
+            "10": 23,
+            "15": 25
+          },
+          "warning_lead_mean_minutes": 8.37962962962963,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 2.1040723981900453,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9216,
+            "false_positives": 1138,
+            "false_negatives": 1747,
+            "recall": 0.8406458086290249,
+            "precision": 0.8900907861695962,
+            "false_positive_rate": 0.0020238918836244383
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9216,
+            "false_positives": 1138,
+            "false_negatives": 1747,
+            "recall": 0.8406458086290249,
+            "precision": 0.8900907861695962,
+            "false_positive_rate": 0.0020238918836244383
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 106.0,
+          "detected": 536.0,
+          "false": 326.0,
+          "duplicate": 271.0,
+          "late": 430.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.1575037147102526,
+          "detection_recall": 0.7964338781575037,
+          "false_per_valid_station_day": 0.16378308788899248,
+          "missed_events": 137,
+          "warning_recall_at_least10": 0.07280832095096583,
+          "warning_lead_counts": {
+            "5": 57,
+            "10": 22,
+            "15": 27
+          },
+          "warning_lead_mean_minutes": 8.584905660377359,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 3.4651162790697674,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8913,
+            "false_positives": 1137,
+            "false_negatives": 2050,
+            "recall": 0.8130073884885524,
+            "precision": 0.8868656716417911,
+            "false_positive_rate": 0.002022113419754821
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 155,
+            "false_positives": 34,
+            "false_negatives": 396,
+            "recall": 0.2813067150635209,
+            "precision": 0.8201058201058201,
+            "false_positive_rate": 0.0014569763455605073
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 8758,
+            "false_positives": 1103,
+            "false_negatives": 1654,
+            "recall": 0.8411448328851325,
+            "precision": 0.8881452185376737,
+            "false_positive_rate": 0.0020465834302816417
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 95.0,
+          "detected": 498.0,
+          "false": 274.0,
+          "duplicate": 236.0,
+          "late": 403.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.1411589895988113,
+          "detection_recall": 0.7399702823179792,
+          "false_per_valid_station_day": 0.13765817816436793,
+          "missed_events": 175,
+          "warning_recall_at_least10": 0.06092124814264487,
+          "warning_lead_counts": {
+            "5": 54,
+            "10": 17,
+            "15": 24
+          },
+          "warning_lead_mean_minutes": 8.421052631578947,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 7.07196029776675,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8185,
+            "false_positives": 1068,
+            "false_negatives": 2778,
+            "recall": 0.746602207424975,
+            "precision": 0.8845779747109046,
+            "false_positive_rate": 0.0018993994127512303
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 366,
+            "false_positives": 85,
+            "false_negatives": 1330,
+            "recall": 0.21580188679245282,
+            "precision": 0.811529933481153,
+            "false_positive_rate": 0.0012148931608661473
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 7819,
+            "false_positives": 983,
+            "false_negatives": 1448,
+            "recall": 0.8437466278191432,
+            "precision": 0.8883208361735969,
+            "false_positive_rate": 0.0019966769445764728
+          }
+        }
+      },
+      "fine": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 147.0,
+          "detected": 562.0,
+          "false": 380.0,
+          "duplicate": 254.0,
+          "late": 415.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.21842496285289748,
+          "detection_recall": 0.8350668647845468,
+          "false_per_valid_station_day": 0.19091280183379492,
+          "missed_events": 111,
+          "warning_recall_at_least10": 0.08915304606240713,
+          "warning_lead_counts": {
+            "5": 87,
+            "10": 28,
+            "15": 32
+          },
+          "warning_lead_mean_minutes": 8.129251700680273,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 1.3373493975903614,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9462,
+            "false_positives": 1316,
+            "false_negatives": 1501,
+            "recall": 0.8630849220103987,
+            "precision": 0.8778994247541287,
+            "false_positive_rate": 0.00234045845241631
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9462,
+            "false_positives": 1316,
+            "false_negatives": 1501,
+            "recall": 0.8630849220103987,
+            "precision": 0.8778994247541287,
+            "false_positive_rate": 0.00234045845241631
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 141.0,
+          "detected": 546.0,
+          "false": 374.0,
+          "duplicate": 239.0,
+          "late": 405.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.20950965824665677,
+          "detection_recall": 0.8112927191679049,
+          "false_per_valid_station_day": 0.18789838917326132,
+          "missed_events": 127,
+          "warning_recall_at_least10": 0.0861812778603269,
+          "warning_lead_counts": {
+            "5": 83,
+            "10": 27,
+            "15": 31
+          },
+          "warning_lead_mean_minutes": 8.156028368794326,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 2.8271604938271606,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9160,
+            "false_positives": 1321,
+            "false_negatives": 1803,
+            "recall": 0.8355377177779805,
+            "precision": 0.8739624081671596,
+            "false_positive_rate": 0.0023493507717643964
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 168,
+            "false_positives": 42,
+            "false_negatives": 383,
+            "recall": 0.30490018148820325,
+            "precision": 0.8,
+            "false_positive_rate": 0.0017997943092218033
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 8992,
+            "false_positives": 1279,
+            "false_negatives": 1420,
+            "recall": 0.863618901267768,
+            "precision": 0.8754746373284004,
+            "false_positive_rate": 0.0023731461535178786
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 133.0,
+          "detected": 510.0,
+          "false": 315.0,
+          "duplicate": 216.0,
+          "late": 377.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.1976225854383358,
+          "detection_recall": 0.7578008915304606,
+          "false_per_valid_station_day": 0.15825666467801422,
+          "missed_events": 163,
+          "warning_recall_at_least10": 0.0787518573551263,
+          "warning_lead_counts": {
+            "5": 80,
+            "10": 26,
+            "15": 27
+          },
+          "warning_lead_mean_minutes": 8.007518796992482,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 6.047745358090186,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8464,
+            "false_positives": 1268,
+            "false_negatives": 2499,
+            "recall": 0.7720514457721427,
+            "precision": 0.8697081792026305,
+            "false_positive_rate": 0.0022550921866746816
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 435,
+            "false_positives": 148,
+            "false_negatives": 1261,
+            "recall": 0.25648584905660377,
+            "precision": 0.7461406518010292,
+            "false_positive_rate": 0.0021153433859787034
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 8029,
+            "false_positives": 1120,
+            "false_negatives": 1238,
+            "recall": 0.8664076831768641,
+            "precision": 0.8775822494261668,
+            "false_positive_rate": 0.002274952368184791
+          }
+        }
+      }
+    },
+    "state_logistic": {
+      "coarse": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 120.0,
+          "detected": 485.0,
+          "false": 203.0,
+          "duplicate": 157.0,
+          "late": 365.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.17830609212481427,
+          "detection_recall": 0.7206537890044576,
+          "false_per_valid_station_day": 0.1019876283480536,
+          "missed_events": 188,
+          "warning_recall_at_least10": 0.06537890044576523,
+          "warning_lead_counts": {
+            "5": 76,
+            "10": 21,
+            "15": 23
+          },
+          "warning_lead_mean_minutes": 7.791666666666667,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 4.876712328767123,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9271,
+            "false_positives": 1143,
+            "false_negatives": 1692,
+            "recall": 0.8456626835720149,
+            "precision": 0.8902439024390244,
+            "false_positive_rate": 0.0020327842029725244
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9271,
+            "false_positives": 1143,
+            "false_negatives": 1692,
+            "recall": 0.8456626835720149,
+            "precision": 0.8902439024390244,
+            "false_positive_rate": 0.0020327842029725244
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 129.0,
+          "detected": 474.0,
+          "false": 197.0,
+          "duplicate": 147.0,
+          "late": 345.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.19167904903417535,
+          "detection_recall": 0.7043090638930164,
+          "false_per_valid_station_day": 0.09897321568752,
+          "missed_events": 199,
+          "warning_recall_at_least10": 0.06983655274888559,
+          "warning_lead_counts": {
+            "5": 82,
+            "10": 25,
+            "15": 22
+          },
+          "warning_lead_mean_minutes": 7.674418604651163,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 6.318840579710145,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9025,
+            "false_positives": 1155,
+            "false_negatives": 1938,
+            "recall": 0.8232235701906413,
+            "precision": 0.8865422396856582,
+            "false_positive_rate": 0.0020541257694079314
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 192,
+            "false_positives": 30,
+            "false_negatives": 359,
+            "recall": 0.3484573502722323,
+            "precision": 0.8648648648648649,
+            "false_positive_rate": 0.0012855673637298594
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 8833,
+            "false_positives": 1125,
+            "false_negatives": 1579,
+            "recall": 0.848348059930849,
+            "precision": 0.8870255071299458,
+            "false_positive_rate": 0.0020874037706861714
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 110.0,
+          "detected": 444.0,
+          "false": 213.0,
+          "duplicate": 134.0,
+          "late": 334.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.16344725111441308,
+          "detection_recall": 0.6597325408618128,
+          "false_per_valid_station_day": 0.10701164944894294,
+          "missed_events": 229,
+          "warning_recall_at_least10": 0.05646359583952452,
+          "warning_lead_counts": {
+            "5": 72,
+            "10": 21,
+            "15": 17
+          },
+          "warning_lead_mean_minutes": 7.5,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 7.245508982035928,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8549,
+            "false_positives": 1246,
+            "false_negatives": 2414,
+            "recall": 0.7798047979567636,
+            "precision": 0.8727922409392547,
+            "false_positive_rate": 0.002215965981543102
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 612,
+            "false_positives": 153,
+            "false_negatives": 1084,
+            "recall": 0.3608490566037736,
+            "precision": 0.8,
+            "false_positive_rate": 0.002186807689559065
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 7937,
+            "false_positives": 1093,
+            "false_negatives": 1330,
+            "recall": 0.856479982734434,
+            "precision": 0.8789590254706534,
+            "false_positive_rate": 0.002220109766451765
+          }
+        }
+      },
+      "fine": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 181.0,
+          "detected": 500.0,
+          "false": 237.0,
+          "duplicate": 140.0,
+          "late": 319.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2689450222882615,
+          "detection_recall": 0.7429420505200595,
+          "false_per_valid_station_day": 0.11906930009107736,
+          "missed_events": 173,
+          "warning_recall_at_least10": 0.0950965824665676,
+          "warning_lead_counts": {
+            "5": 117,
+            "10": 35,
+            "15": 29
+          },
+          "warning_lead_mean_minutes": 7.569060773480663,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 3.793103448275862,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9619,
+            "false_positives": 1406,
+            "false_negatives": 1344,
+            "recall": 0.8774058195749339,
+            "precision": 0.8724716553287982,
+            "false_positive_rate": 0.002500520200681863
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9619,
+            "false_positives": 1406,
+            "false_negatives": 1344,
+            "recall": 0.8774058195749339,
+            "precision": 0.8724716553287982,
+            "false_positive_rate": 0.002500520200681863
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 178.0,
+          "detected": 492.0,
+          "false": 232.0,
+          "duplicate": 132.0,
+          "late": 314.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.26448736998514116,
+          "detection_recall": 0.7310549777117384,
+          "false_per_valid_station_day": 0.11655728954063269,
+          "missed_events": 181,
+          "warning_recall_at_least10": 0.09212481426448738,
+          "warning_lead_counts": {
+            "5": 116,
+            "10": 36,
+            "15": 26
+          },
+          "warning_lead_mean_minutes": 7.47191011235955,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 5.254777070063694,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9372,
+            "false_positives": 1432,
+            "false_negatives": 1591,
+            "recall": 0.8548754902855058,
+            "precision": 0.8674564975934839,
+            "false_positive_rate": 0.0025467602612919116
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 206,
+            "false_positives": 33,
+            "false_negatives": 345,
+            "recall": 0.3738656987295826,
+            "precision": 0.8619246861924686,
+            "false_positive_rate": 0.0014141241001028454
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 9166,
+            "false_positives": 1399,
+            "false_negatives": 1246,
+            "recall": 0.8803303880138302,
+            "precision": 0.8675816374822527,
+            "false_positive_rate": 0.0025958025557244035
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 164.0,
+          "detected": 464.0,
+          "false": 249.0,
+          "duplicate": 120.0,
+          "late": 300.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2436849925705795,
+          "detection_recall": 0.6894502228826151,
+          "false_per_valid_station_day": 0.12509812541214457,
+          "missed_events": 209,
+          "warning_recall_at_least10": 0.08320950965824665,
+          "warning_lead_counts": {
+            "5": 108,
+            "10": 32,
+            "15": 24
+          },
+          "warning_lead_mean_minutes": 7.439024390243903,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 6.6,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8981,
+            "false_positives": 1598,
+            "false_negatives": 1982,
+            "recall": 0.8192100702362493,
+            "precision": 0.8489460251441535,
+            "false_positive_rate": 0.0028419852636483766
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 764,
+            "false_positives": 242,
+            "false_negatives": 932,
+            "recall": 0.45047169811320753,
+            "precision": 0.7594433399602386,
+            "false_positive_rate": 0.003458872293289502
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 8217,
+            "false_positives": 1356,
+            "false_negatives": 1050,
+            "recall": 0.8866947232113953,
+            "precision": 0.8583516139141335,
+            "false_positive_rate": 0.0027543173314808723
+          }
+        }
+      }
+    },
+    "persistent_mlp": {
+      "coarse": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 114.0,
+          "detected": 484.0,
+          "false": 239.0,
+          "duplicate": 138.0,
+          "late": 370.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.16939078751857356,
+          "detection_recall": 0.7191679049034175,
+          "false_per_valid_station_day": 0.12007410431125523,
+          "missed_events": 189,
+          "warning_recall_at_least10": 0.06983655274888559,
+          "warning_lead_counts": {
+            "5": 67,
+            "10": 24,
+            "15": 23
+          },
+          "warning_lead_mean_minutes": 8.070175438596491,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 5.148648648648648,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9474,
+            "false_positives": 1380,
+            "false_negatives": 1489,
+            "recall": 0.864179512907051,
+            "precision": 0.8728579325594251,
+            "false_positive_rate": 0.0024542801400718145
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9474,
+            "false_positives": 1380,
+            "false_negatives": 1489,
+            "recall": 0.864179512907051,
+            "precision": 0.8728579325594251,
+            "false_positive_rate": 0.0024542801400718145
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 108.0,
+          "detected": 468.0,
+          "false": 237.0,
+          "duplicate": 123.0,
+          "late": 360.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.16047548291233285,
+          "detection_recall": 0.6953937592867756,
+          "false_per_valid_station_day": 0.11906930009107736,
+          "missed_events": 205,
+          "warning_recall_at_least10": 0.06537890044576523,
+          "warning_lead_counts": {
+            "5": 64,
+            "10": 24,
+            "15": 20
+          },
+          "warning_lead_mean_minutes": 7.962962962962963,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 6.305555555555555,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9251,
+            "false_positives": 1424,
+            "false_negatives": 1712,
+            "recall": 0.8438383654109277,
+            "precision": 0.8666042154566744,
+            "false_positive_rate": 0.002532532550334974
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 230,
+            "false_positives": 46,
+            "false_negatives": 321,
+            "recall": 0.41742286751361163,
+            "precision": 0.8333333333333334,
+            "false_positive_rate": 0.001971203291052451
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 9021,
+            "false_positives": 1378,
+            "false_negatives": 1391,
+            "recall": 0.8664041490587784,
+            "precision": 0.8674872583902298,
+            "false_positive_rate": 0.0025568376853382616
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 93.0,
+          "detected": 424.0,
+          "false": 258.0,
+          "duplicate": 136.0,
+          "late": 331.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.13818722139673106,
+          "detection_recall": 0.6300148588410104,
+          "false_per_valid_station_day": 0.12961974440294496,
+          "missed_events": 249,
+          "warning_recall_at_least10": 0.06537890044576523,
+          "warning_lead_counts": {
+            "5": 49,
+            "10": 24,
+            "15": 20
+          },
+          "warning_lead_mean_minutes": 8.440860215053764,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 5.166163141993958,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 8843,
+            "false_positives": 1598,
+            "false_negatives": 2120,
+            "recall": 0.8066222749247469,
+            "precision": 0.8469495259074801,
+            "false_positive_rate": 0.0028419852636483766
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 866,
+            "false_positives": 327,
+            "false_negatives": 830,
+            "recall": 0.5106132075471698,
+            "precision": 0.7259010896898574,
+            "false_positive_rate": 0.00467376545415565
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 7977,
+            "false_positives": 1271,
+            "false_negatives": 1290,
+            "recall": 0.8607963742311427,
+            "precision": 0.8625648788927336,
+            "false_positive_rate": 0.002581664696395419
+          }
+        }
+      },
+      "fine": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 142.0,
+          "detected": 492.0,
+          "false": 284.0,
+          "duplicate": 121.0,
+          "late": 350.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.21099554234769688,
+          "detection_recall": 0.7310549777117384,
+          "false_per_valid_station_day": 0.14268219926525724,
+          "missed_events": 181,
+          "warning_recall_at_least10": 0.08172362555720654,
+          "warning_lead_counts": {
+            "5": 87,
+            "10": 30,
+            "15": 25
+          },
+          "warning_lead_mean_minutes": 7.816901408450704,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 4.428571428571429,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9708,
+            "false_positives": 1617,
+            "false_negatives": 1255,
+            "recall": 0.8855240353917724,
+            "precision": 0.8572185430463576,
+            "false_positive_rate": 0.002875776077171104
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9708,
+            "false_positives": 1617,
+            "false_negatives": 1255,
+            "recall": 0.8855240353917724,
+            "precision": 0.8572185430463576,
+            "false_positive_rate": 0.002875776077171104
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 139.0,
+          "detected": 475.0,
+          "false": 288.0,
+          "duplicate": 111.0,
+          "late": 336.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2065378900445765,
+          "detection_recall": 0.7057949479940565,
+          "false_per_valid_station_day": 0.144691807705613,
+          "missed_events": 198,
+          "warning_recall_at_least10": 0.07726597325408618,
+          "warning_lead_counts": {
+            "5": 87,
+            "10": 28,
+            "15": 24
+          },
+          "warning_lead_mean_minutes": 7.733812949640288,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 6.116071428571429,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9477,
+            "false_positives": 1669,
+            "false_negatives": 1486,
+            "recall": 0.8644531606312141,
+            "precision": 0.8502601830253006,
+            "false_positive_rate": 0.0029682561983912018
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 246,
+            "false_positives": 53,
+            "false_negatives": 305,
+            "recall": 0.44646098003629764,
+            "precision": 0.822742474916388,
+            "false_positive_rate": 0.002271169009256085
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 9231,
+            "false_positives": 1616,
+            "false_negatives": 1181,
+            "recall": 0.8865731847867845,
+            "precision": 0.8510187148520328,
+            "false_positive_rate": 0.002998439549714536
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 120.0,
+          "detected": 438.0,
+          "false": 276.0,
+          "duplicate": 104.0,
+          "late": 318.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.17830609212481427,
+          "detection_recall": 0.6508172362555721,
+          "false_per_valid_station_day": 0.13866298238454577,
+          "missed_events": 235,
+          "warning_recall_at_least10": 0.06983655274888559,
+          "warning_lead_counts": {
+            "5": 73,
+            "10": 25,
+            "15": 22
+          },
+          "warning_lead_mean_minutes": 7.875,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 5.29874213836478,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 9065,
+            "false_positives": 1830,
+            "false_negatives": 1898,
+            "recall": 0.8268722065128158,
+            "precision": 0.8320330426801285,
+            "false_positive_rate": 0.0032545888813995797
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 896,
+            "false_positives": 360,
+            "false_negatives": 800,
+            "recall": 0.5283018867924528,
+            "precision": 0.7133757961783439,
+            "false_positive_rate": 0.005145429857786036
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 8169,
+            "false_positives": 1470,
+            "false_negatives": 1098,
+            "recall": 0.8815150534153448,
+            "precision": 0.8474945533769063,
+            "false_positive_rate": 0.0029858749832425385
+          }
+        }
+      }
+    },
+    "onset_linear": {
+      "coarse": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 145.0,
+          "detected": 287.0,
+          "false": 223.0,
+          "duplicate": 4.0,
+          "late": 142.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.21545319465081725,
+          "detection_recall": 0.4264487369985141,
+          "false_per_valid_station_day": 0.11203567054983228,
+          "missed_events": 386,
+          "warning_recall_at_least10": 0.11441307578008915,
+          "warning_lead_counts": {
+            "5": 68,
+            "10": 53,
+            "15": 24
+          },
+          "warning_lead_mean_minutes": 8.482758620689655,
+          "warning_lead_median_minutes": 10.0,
+          "late_detection_mean_minutes": 2.9225352112676055,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 992,
+            "false_positives": 893,
+            "false_negatives": 9971,
+            "recall": 0.09048618078992976,
+            "precision": 0.5262599469496021,
+            "false_positive_rate": 0.0015881682355682104
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 992,
+            "false_positives": 893,
+            "false_negatives": 9971,
+            "recall": 0.09048618078992976,
+            "precision": 0.5262599469496021,
+            "false_positive_rate": 0.0015881682355682104
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 148.0,
+          "detected": 291.0,
+          "false": 227.0,
+          "duplicate": 2.0,
+          "late": 143.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.2199108469539376,
+          "detection_recall": 0.4323922734026746,
+          "false_per_valid_station_day": 0.11404527899018801,
+          "missed_events": 382,
+          "warning_recall_at_least10": 0.11589895988112928,
+          "warning_lead_counts": {
+            "5": 70,
+            "10": 51,
+            "15": 27
+          },
+          "warning_lead_mean_minutes": 8.547297297297296,
+          "warning_lead_median_minutes": 10.0,
+          "late_detection_mean_minutes": 8.496503496503497,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 1079,
+            "false_positives": 929,
+            "false_negatives": 9884,
+            "recall": 0.0984219647906595,
+            "precision": 0.5373505976095617,
+            "false_positive_rate": 0.0016521929348744316
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 111,
+            "false_positives": 2,
+            "false_negatives": 440,
+            "recall": 0.2014519056261343,
+            "precision": 0.9823008849557522,
+            "false_positive_rate": 8.570449091532397e-05
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 968,
+            "false_positives": 927,
+            "false_negatives": 9444,
+            "recall": 0.09296965040338072,
+            "precision": 0.5108179419525066,
+            "false_positive_rate": 0.0017200207070454051
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 127.0,
+          "detected": 267.0,
+          "false": 211.0,
+          "duplicate": 6.0,
+          "late": 140.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.1887072808320951,
+          "detection_recall": 0.3967310549777117,
+          "false_per_valid_station_day": 0.10600684522876508,
+          "missed_events": 406,
+          "warning_recall_at_least10": 0.09212481426448738,
+          "warning_lead_counts": {
+            "5": 65,
+            "10": 41,
+            "15": 21
+          },
+          "warning_lead_mean_minutes": 8.26771653543307,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 16.571428571428573,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 1163,
+            "false_positives": 899,
+            "false_negatives": 9800,
+            "recall": 0.10608410106722613,
+            "precision": 0.5640155189136761,
+            "false_positive_rate": 0.001598839018785914
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 257,
+            "false_positives": 27,
+            "false_negatives": 1439,
+            "recall": 0.15153301886792453,
+            "precision": 0.9049295774647887,
+            "false_positive_rate": 0.00038590723933395267
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 906,
+            "false_positives": 872,
+            "false_negatives": 8361,
+            "recall": 0.09776626740045322,
+            "precision": 0.5095613048368954,
+            "false_positive_rate": 0.0017712129152295873
+          }
+        }
+      },
+      "fine": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 184.0,
+          "detected": 255.0,
+          "false": 195.0,
+          "duplicate": 9.0,
+          "late": 71.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.27340267459138184,
+          "detection_recall": 0.3789004457652303,
+          "false_per_valid_station_day": 0.09796841146734213,
+          "missed_events": 418,
+          "warning_recall_at_least10": 0.10401188707280833,
+          "warning_lead_counts": {
+            "5": 114,
+            "10": 46,
+            "15": 24
+          },
+          "warning_lead_mean_minutes": 7.554347826086956,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 1.619718309859155,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 756,
+            "false_positives": 686,
+            "false_negatives": 10207,
+            "recall": 0.0689592264890997,
+            "precision": 0.5242718446601942,
+            "false_positive_rate": 0.0012200262145574381
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 756,
+            "false_positives": 686,
+            "false_negatives": 10207,
+            "recall": 0.0689592264890997,
+            "precision": 0.5242718446601942,
+            "false_positive_rate": 0.0012200262145574381
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 178.0,
+          "detected": 249.0,
+          "false": 204.0,
+          "duplicate": 14.0,
+          "late": 71.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.26448736998514116,
+          "detection_recall": 0.3699851411589896,
+          "false_per_valid_station_day": 0.10249003045814253,
+          "missed_events": 424,
+          "warning_recall_at_least10": 0.12184249628528974,
+          "warning_lead_counts": {
+            "5": 96,
+            "10": 53,
+            "15": 29
+          },
+          "warning_lead_mean_minutes": 8.117977528089888,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 10.070422535211268,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 831,
+            "false_positives": 723,
+            "false_negatives": 10132,
+            "recall": 0.07580041959317706,
+            "precision": 0.5347490347490348,
+            "false_positive_rate": 0.0012858293777332766
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 81,
+            "false_positives": 0,
+            "false_negatives": 470,
+            "recall": 0.147005444646098,
+            "precision": 1.0,
+            "false_positive_rate": 0.0
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 750,
+            "false_positives": 723,
+            "false_negatives": 9662,
+            "recall": 0.07203227045716482,
+            "precision": 0.5091649694501018,
+            "false_positive_rate": 0.0013415048232943128
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 178.0,
+          "detected": 239.0,
+          "false": 175.0,
+          "duplicate": 13.0,
+          "late": 61.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.26448736998514116,
+          "detection_recall": 0.3551263001485884,
+          "false_per_valid_station_day": 0.08792036926556344,
+          "missed_events": 434,
+          "warning_recall_at_least10": 0.09955423476968796,
+          "warning_lead_counts": {
+            "5": 111,
+            "10": 39,
+            "15": 28
+          },
+          "warning_lead_mean_minutes": 7.668539325842697,
+          "warning_lead_median_minutes": 5.0,
+          "late_detection_mean_minutes": 30.737704918032787,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 911,
+            "false_positives": 683,
+            "false_negatives": 10052,
+            "recall": 0.08309769223752622,
+            "precision": 0.5715181932245922,
+            "false_positive_rate": 0.0012146908229485865
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 193,
+            "false_positives": 20,
+            "false_negatives": 1503,
+            "recall": 0.11379716981132075,
+            "precision": 0.9061032863849765,
+            "false_positive_rate": 0.0002858572143214464
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 718,
+            "false_positives": 663,
+            "false_negatives": 8549,
+            "recall": 0.0774792273659221,
+            "precision": 0.5199131064446053,
+            "false_positive_rate": 0.0013466905536665325
+          }
+        }
+      }
+    },
+    "onset_mlp": {
+      "coarse": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 111.0,
+          "detected": 133.0,
+          "false": 100.0,
+          "duplicate": 1.0,
+          "late": 22.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.1649331352154532,
+          "detection_recall": 0.1976225854383358,
+          "false_per_valid_station_day": 0.0502402110088934,
+          "missed_events": 540,
+          "warning_recall_at_least10": 0.10104011887072809,
+          "warning_lead_counts": {
+            "5": 43,
+            "10": 42,
+            "15": 26
+          },
+          "warning_lead_mean_minutes": 9.234234234234235,
+          "warning_lead_median_minutes": 10.0,
+          "late_detection_mean_minutes": 0.9090909090909091,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 246,
+            "false_positives": 414,
+            "false_negatives": 10717,
+            "recall": 0.02243911338137371,
+            "precision": 0.37272727272727274,
+            "false_positive_rate": 0.0007362840420215443
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 246,
+            "false_positives": 414,
+            "false_negatives": 10717,
+            "recall": 0.02243911338137371,
+            "precision": 0.37272727272727274,
+            "false_positive_rate": 0.0007362840420215443
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 108.0,
+          "detected": 129.0,
+          "false": 95.0,
+          "duplicate": 1.0,
+          "late": 21.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.16047548291233285,
+          "detection_recall": 0.19167904903417535,
+          "false_per_valid_station_day": 0.04772820045844873,
+          "missed_events": 544,
+          "warning_recall_at_least10": 0.09212481426448738,
+          "warning_lead_counts": {
+            "5": 46,
+            "10": 39,
+            "15": 23
+          },
+          "warning_lead_mean_minutes": 8.935185185185185,
+          "warning_lead_median_minutes": 10.0,
+          "late_detection_mean_minutes": 0.47619047619047616,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 240,
+            "false_positives": 397,
+            "false_negatives": 10723,
+            "recall": 0.021891817933047522,
+            "precision": 0.37676609105180536,
+            "false_positive_rate": 0.000706050156238051
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 551,
+            "recall": 0.0,
+            "precision": null,
+            "false_positive_rate": 0.0
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 240,
+            "false_positives": 397,
+            "false_negatives": 10172,
+            "recall": 0.02305032654629274,
+            "precision": 0.37676609105180536,
+            "false_positive_rate": 0.00073662159729992
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 90.0,
+          "detected": 117.0,
+          "false": 75.0,
+          "duplicate": 1.0,
+          "late": 27.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.1337295690936107,
+          "detection_recall": 0.1738484398216939,
+          "false_per_valid_station_day": 0.03768015825667005,
+          "missed_events": 556,
+          "warning_recall_at_least10": 0.0787518573551263,
+          "warning_lead_counts": {
+            "5": 37,
+            "10": 35,
+            "15": 18
+          },
+          "warning_lead_mean_minutes": 8.944444444444445,
+          "warning_lead_median_minutes": 10.0,
+          "late_detection_mean_minutes": 0.5555555555555556,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 210,
+            "false_positives": 331,
+            "false_negatives": 10753,
+            "recall": 0.019155340691416584,
+            "precision": 0.38817005545286504,
+            "false_positive_rate": 0.000588671540843312
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 1696,
+            "recall": 0.0,
+            "precision": null,
+            "false_positive_rate": 0.0
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 210,
+            "false_positives": 331,
+            "false_negatives": 9057,
+            "recall": 0.022661055357720946,
+            "precision": 0.38817005545286504,
+            "false_positive_rate": 0.0006723296730974695
+          }
+        }
+      },
+      "fine": {
+        "natural": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 153.0,
+          "detected": 198.0,
+          "false": 188.0,
+          "duplicate": 0.0,
+          "late": 45.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.22734026745913818,
+          "detection_recall": 0.29420505200594355,
+          "false_per_valid_station_day": 0.0944515966967196,
+          "missed_events": 475,
+          "warning_recall_at_least10": 0.1263001485884101,
+          "warning_lead_counts": {
+            "5": 68,
+            "10": 54,
+            "15": 31
+          },
+          "warning_lead_mean_minutes": 8.790849673202615,
+          "warning_lead_median_minutes": 10.0,
+          "late_detection_mean_minutes": 0.5555555555555556,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 481,
+            "false_positives": 737,
+            "false_negatives": 10482,
+            "recall": 0.04387485177414941,
+            "precision": 0.3949096880131363,
+            "false_positive_rate": 0.0013107278719079183
+          },
+          "point_fault_nodes": {
+            "valid_points": 0,
+            "positive_points": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "recall": null,
+            "precision": null,
+            "false_positive_rate": null
+          },
+          "point_other_nodes": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 481,
+            "false_positives": 737,
+            "false_negatives": 10482,
+            "recall": 0.04387485177414941,
+            "precision": 0.3949096880131363,
+            "false_positive_rate": 0.0013107278719079183
+          }
+        },
+        "single_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 151.0,
+          "detected": 193.0,
+          "false": 183.0,
+          "duplicate": 1.0,
+          "late": 42.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.22436849925705796,
+          "detection_recall": 0.2867756315007429,
+          "false_per_valid_station_day": 0.09193958614627493,
+          "missed_events": 480,
+          "warning_recall_at_least10": 0.1277860326894502,
+          "warning_lead_counts": {
+            "5": 65,
+            "10": 56,
+            "15": 30
+          },
+          "warning_lead_mean_minutes": 8.841059602649006,
+          "warning_lead_median_minutes": 10.0,
+          "late_detection_mean_minutes": 0.5952380952380952,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 470,
+            "false_positives": 717,
+            "false_negatives": 10493,
+            "recall": 0.0428714767855514,
+            "precision": 0.3959561920808762,
+            "false_positive_rate": 0.001275158594515573
+          },
+          "point_fault_nodes": {
+            "valid_points": 23887,
+            "positive_points": 551,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 551,
+            "recall": 0.0,
+            "precision": null,
+            "false_positive_rate": 0.0
+          },
+          "point_other_nodes": {
+            "valid_points": 549359,
+            "positive_points": 10412,
+            "true_positives": 470,
+            "false_positives": 717,
+            "false_negatives": 9942,
+            "recall": 0.04514022281982328,
+            "precision": 0.3959561920808762,
+            "false_positive_rate": 0.0013303720031839865
+          }
+        },
+        "group_outage": {
+          "exposure": 1990.4374999997162,
+          "events": 673.0,
+          "warned": 126.0,
+          "detected": 178.0,
+          "false": 146.0,
+          "duplicate": 2.0,
+          "late": 52.0,
+          "censored_events": 0.0,
+          "censored_alerts": 0.0,
+          "unknown_alerts": 0.0,
+          "warning_recall": 0.18722139673105498,
+          "detection_recall": 0.26448736998514116,
+          "false_per_valid_station_day": 0.07335070807298437,
+          "missed_events": 495,
+          "warning_recall_at_least10": 0.1025260029717682,
+          "warning_lead_counts": {
+            "5": 57,
+            "10": 45,
+            "15": 24
+          },
+          "warning_lead_mean_minutes": 8.69047619047619,
+          "warning_lead_median_minutes": 10.0,
+          "late_detection_mean_minutes": 0.9615384615384616,
+          "point_all": {
+            "valid_points": 573246,
+            "positive_points": 10963,
+            "true_positives": 412,
+            "false_positives": 595,
+            "false_negatives": 10551,
+            "recall": 0.03758095411839825,
+            "precision": 0.40913604766633566,
+            "false_positive_rate": 0.0010581860024222677
+          },
+          "point_fault_nodes": {
+            "valid_points": 71661,
+            "positive_points": 1696,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 1696,
+            "recall": 0.0,
+            "precision": null,
+            "false_positive_rate": 0.0
+          },
+          "point_other_nodes": {
+            "valid_points": 501585,
+            "positive_points": 9267,
+            "true_positives": 412,
+            "false_positives": 595,
+            "false_negatives": 8855,
+            "recall": 0.04445883241610014,
+            "precision": 0.40913604766633566,
+            "false_positive_rate": 0.0012085684455981703
+          }
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "onset_mlp_fine_minus_global_fine": {
+      "candidate": "onset_mlp_fine",
+      "baseline": "global_calibration_fine",
+      "primary": true,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.029717682020802372,
+          "ci95": [
+            0.002335181343466243,
+            0.05555952380952379
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed",
+          "ci975": [
+            -0.001978536399901384,
+            0.058923609735483315
+          ]
+        },
+        "warning_recall": {
+          "difference": -0.03813769192669638,
+          "ci95": [
+            -0.0699952276064611,
+            -0.0038968176059469583
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": -0.5220406141654285,
+          "ci95": [
+            -0.5547108895705521,
+            -0.48933760881169425
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": -0.10081535675784609,
+          "ci95": [
+            -0.1300684751541042,
+            -0.07352022431224627
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "onset_mlp_fine_minus_group_fine": {
+      "candidate": "onset_mlp_fine",
+      "baseline": "group_calibration_fine",
+      "primary": true,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.03417533432392273,
+          "ci95": [
+            0.006930574122637451,
+            0.06026116385981934
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed",
+          "ci975": [
+            0.0036087677741531137,
+            0.06291650277335979
+          ]
+        },
+        "warning_recall": {
+          "difference": 0.004457652303120359,
+          "ci95": [
+            -0.02714210024588923,
+            0.03720760947361571
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": -0.5195641406636949,
+          "ci95": [
+            -0.5524167376159219,
+            -0.48640318293629176
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": -0.09244198825636385,
+          "ci95": [
+            -0.12001459383284595,
+            -0.06680667319753658
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "onset_mlp_fine_minus_persistent_fine": {
+      "candidate": "onset_mlp_fine",
+      "baseline": "persistent_mlp_fine",
+      "primary": false,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.042595344229816735,
+          "ci95": [
+            0.012164583910807231,
+            0.07085013838231692
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "warning_recall": {
+          "difference": 0.014363546310054487,
+          "ci95": [
+            -0.019117364117364123,
+            0.046075332408842457
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": -0.4140663694898465,
+          "ci95": [
+            -0.45113708599768976,
+            -0.37882866537082854
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": -0.05543169947981238,
+          "ci95": [
+            -0.0773599353749721,
+            -0.03431225490351974
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "onset_mlp_fine_minus_onset_linear_fine": {
+      "candidate": "onset_mlp_fine",
+      "baseline": "onset_linear_fine",
+      "primary": false,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.010401188707280828,
+          "ci95": [
+            -0.010869712982008178,
+            0.029668213715428306
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "warning_recall": {
+          "difference": -0.054482417038137686,
+          "ci95": [
+            -0.0814497323217394,
+            -0.026315456699411672
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": -0.08618127786032691,
+          "ci95": [
+            -0.11367797508706888,
+            -0.058852627809114516
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": -0.009545640091689738,
+          "ci95": [
+            -0.023960556366655734,
+            0.005857991051849394
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "dense_speed_fine_minus_coarse": {
+      "candidate": "dense_speed_fine",
+      "baseline": "dense_speed_coarse",
+      "primary": false,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "warning_recall": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "global_calibration_fine_minus_coarse": {
+      "candidate": "global_calibration_fine",
+      "baseline": "global_calibration_coarse",
+      "primary": false,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.01337295690936107,
+          "ci95": [
+            0.002047896202971664,
+            0.025059417706476503
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "warning_recall": {
+          "difference": 0.06983655274888559,
+          "ci95": [
+            0.04938215180445527,
+            0.09082023265927373
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": 0.02377414561664189,
+          "ci95": [
+            0.013733232729711591,
+            0.03409297810033107
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": 0.024115301284268826,
+          "ci95": [
+            0.014567052065573594,
+            0.03447575686543446
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "group_calibration_fine_minus_coarse": {
+      "candidate": "group_calibration_fine",
+      "baseline": "group_calibration_coarse",
+      "primary": false,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.01634472511144131,
+          "ci95": [
+            0.005623184856764792,
+            0.027898376449101085
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "warning_recall": {
+          "difference": 0.0554730064388311,
+          "ci95": [
+            0.03867593856170129,
+            0.07313728517032005
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": 0.016840019811788027,
+          "ci95": [
+            0.009123849984793184,
+            0.025862880706539377
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": 0.022943029694061323,
+          "ci95": [
+            0.014742193536674181,
+            0.03199382322532843
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "state_logistic_fine_minus_coarse": {
+      "candidate": "state_logistic_fine",
+      "baseline": "state_logistic_coarse",
+      "primary": false,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.026250619118375434,
+          "ci95": [
+            0.013218458994503475,
+            0.03976919101972015
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "warning_recall": {
+          "difference": 0.08122833085685982,
+          "ci95": [
+            0.06095952802359881,
+            0.10176673578347405
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": 0.026250619118375413,
+          "ci95": [
+            0.012232346530721546,
+            0.039825899964849164
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": 0.017584073853112694,
+          "ci95": [
+            0.00754056885798896,
+            0.027460434396309796
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "persistent_mlp_fine_minus_coarse": {
+      "candidate": "persistent_mlp_fine",
+      "baseline": "persistent_mlp_coarse",
+      "primary": false,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.009410599306587419,
+          "ci95": [
+            -0.0004974750734399627,
+            0.020000500500500496
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "warning_recall": {
+          "difference": 0.04259534422981673,
+          "ci95": [
+            0.02715985318476908,
+            0.059486055563074305
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": 0.014363546310054506,
+          "ci95": [
+            0.004347044103847369,
+            0.025212015840819096
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": 0.019091280183379484,
+          "ci95": [
+            0.010391291859480983,
+            0.027802300638214008
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "onset_linear_fine_minus_coarse": {
+      "candidate": "onset_linear_fine",
+      "baseline": "onset_linear_coarse",
+      "primary": false,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.000990589400693409,
+          "ci95": [
+            -0.015434394614536912,
+            0.016836082342411445
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "warning_recall": {
+          "difference": 0.059435364041604745,
+          "ci95": [
+            0.03524408097329498,
+            0.08510399997116616
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": -0.05052005943536403,
+          "ci95": [
+            -0.07069259644396125,
+            -0.02828613884842643
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": -0.01456966119257909,
+          "ci95": [
+            -0.024103355734839377,
+            -0.004856018781503536
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    },
+    "onset_mlp_fine_minus_coarse": {
+      "candidate": "onset_mlp_fine",
+      "baseline": "onset_mlp_coarse",
+      "primary": false,
+      "metrics": {
+        "warning10_recall": {
+          "difference": 0.028231797919762252,
+          "ci95": [
+            0.011428381950909833,
+            0.044715447154471545
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "warning_recall": {
+          "difference": 0.05993065874195146,
+          "ci95": [
+            0.04138291841559319,
+            0.07849133537206933
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "detection_recall": {
+          "difference": 0.0941059930658742,
+          "ci95": [
+            0.07180111058036781,
+            0.11694037005081008
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        },
+        "false_rate": {
+          "difference": 0.04136444039732224,
+          "ci95": [
+            0.031724992298599784,
+            0.05171863922553259
+          ],
+          "undefined_bootstrap_replicates": 0,
+          "interval_status": "computed"
+        }
+      }
+    }
+  },
+  "verdict": {
+    "executable": true,
+    "both_primary_ci975_lower_bounds_positive": false,
+    "primary_metric_supported": false,
+    "overall_service_improvement_established": false,
+    "algorithm_originality_established": false,
+    "evaluation_data_analyzed_after_this_run": true
+  },
+  "original_results_sha256": "3135cd4c7f8665cf0db0608ab298248b5f43c950b77e01148c62db3877ccf279"
+}

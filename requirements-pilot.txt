@@ -1,0 +1,5 @@
+numpy==2.3.5
+h5py==3.16.0
+matplotlib==3.11.2
+torch==2.8.0+cpu
+# Install with: python -m pip install -r requirements-pilot.txt --extra-index-url https://download.pytorch.org/whl/cpu

@@ -1,0 +1,210 @@
+{
+  "kind": "local_full_pipeline_verification_record",
+  "completed_at_utc": "2026-10-11T13:20:11.750197+00:00",
+  "status": "completed",
+  "completed_steps": [
+    "design",
+    "binding",
+    "reader_audit",
+    "binding_report",
+    "forecast_training",
+    "forecast_audit",
+    "forecast_report",
+    "risk_training",
+    "risk_audit",
+    "risk_report",
+    "calibration",
+    "calibration_audit",
+    "calibration_report",
+    "evaluation_freeze",
+    "evaluation_preflight",
+    "evaluation",
+    "evaluation_audit",
+    "evaluation_report"
+  ],
+  "step_attempts": [
+    {
+      "step": "design",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 0.10492049999993469,
+      "log_sha256": "ab31045b6bb89438b0b2f5c69c166889778e9b731ca68c4e1617b165c498f7ae"
+    },
+    {
+      "step": "binding",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 0.6348940999996557,
+      "log_sha256": "3a35dd098a69355fa23a5335a63d265a8e6f920e47b1095a2609a2c558696000"
+    },
+    {
+      "step": "reader_audit",
+      "status": "failed",
+      "exit_code": 1,
+      "seconds": 0.5458167999986472,
+      "log_sha256": "8c1f528f0cfe5c0a6df0d96e008ac7166f674ba3904a318eaae577029a5ce75d"
+    },
+    {
+      "step": "reader_audit",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 0.857168399999864,
+      "log_sha256": "7be96030a91e1e990fdd996d57d7d570e402db62c248548939d980d9b422faf2"
+    },
+    {
+      "step": "binding_report",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 0.19094269999914104,
+      "log_sha256": "abd96bde9a4ae7a5241e4772fffa506407f3dfb8a4205d909f47ecaf9731fe46"
+    },
+    {
+      "step": "forecast_training",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 987.1737195999995,
+      "log_sha256": "4ff3ea757bc89b15fee97284e71135490d97878e49ab95b6b0cb3a015ba8ecdf"
+    },
+    {
+      "step": "forecast_audit",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 4.732957999998689,
+      "log_sha256": "997d8cfefb7d0e2135468c95925595832edb62b6550d3c4137324438523da68c"
+    },
+    {
+      "step": "forecast_report",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 2.6412459000002855,
+      "log_sha256": "dd5dbe7f6734cbf2599945865ec31c09672db53ee4706ab5dcb626dc451b8719"
+    },
+    {
+      "step": "risk_training",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 61.90416809999988,
+      "log_sha256": "4abc922a94977f13af0b8c6b13abfc52462b746b8690980f2e0fe3e8708eda6b"
+    },
+    {
+      "step": "risk_audit",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 4.8575665000007575,
+      "log_sha256": "7eb965d24509620fed6379fc7ca35a580e31988562aeef8c1ecb0d71ca0c19e6"
+    },
+    {
+      "step": "risk_report",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 2.5216120000004594,
+      "log_sha256": "a101c2d97d6cdfa0cc65ff4b5bf266f171aff1e16c2d8af7db10f5c93b72f420"
+    },
+    {
+      "step": "calibration",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 59.19434410000031,
+      "log_sha256": "4109723e145743fee5d61aecd9275bad5e3a642abda2c5d20a2581dba6d61141"
+    },
+    {
+      "step": "calibration_audit",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 77.5097713999985,
+      "log_sha256": "06d191842d5af9db98403181e21dac4db05e2afd15997d845acecc00ea53a31d"
+    },
+    {
+      "step": "calibration_report",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 2.9896083000003273,
+      "log_sha256": "91c398faade8882a47f785dae26d0b331236f1a9cc755f2c1baac5797f972bfd"
+    },
+    {
+      "step": "evaluation_freeze",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 3.0056272000001627,
+      "log_sha256": "e5c0cdf11bd0af01720d0a6a96118ff1747710a570818dd933b6f4a55f545d92"
+    },
+    {
+      "step": "evaluation_preflight",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 3.3255161000015505,
+      "log_sha256": "4072c3760d28d70a83d46a5dd70814d747d7003decc6262c61796beae4c3a6be"
+    },
+    {
+      "step": "evaluation",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 91.02047499999935,
+      "log_sha256": "4f1b3694be9fbccc295198ac42471f56b4b1f23d438986ff6375915aee4c005c"
+    },
+    {
+      "step": "evaluation_audit",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 10.814197099998637,
+      "log_sha256": "cedee55a847110a17e80aed22ffca4501c771df2ffe23567260a5d25e34a6e51"
+    },
+    {
+      "step": "evaluation_report",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 3.0483399000004283,
+      "log_sha256": "b79684fffff796bf75c856788d7bd69c3f531284efb5264b2e43240493842220"
+    }
+  ],
+  "runner_sha256": "8f270ed5e788ea7c27c7757fd5676f88abf5b1c1f4e9cc9201742639ecd791d1",
+  "seed_manifest_sha256": "65fa85fb27b4918358c587b94500a56d2793d25dad002bcecd2bc91f91336899",
+  "dataset_sha256": "65d69fb0a2323dba9867179eb7af47c8b814186bc459ff0a4937d21614153c8f",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "2.3.5",
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "torch": "2.8.0+cpu"
+    }
+  },
+  "comparison": {
+    "kind": "engineering_reproduction_numeric_comparison",
+    "compared_at_utc": "2026-10-11T13:20:11.746980+00:00",
+    "matches_original_metrics": true,
+    "difference_count": 0,
+    "differences": [],
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-12,
+    "fitted_pems_bay_artifacts_copied": false,
+    "dataset_already_analyzed": true,
+    "fresh_independent_validation": false,
+    "primary_metric_supported": false,
+    "replayed_scenario_operating_points": 42
+  },
+  "actual_training_updates": {
+    "forecaster_updates_by_seed": {
+      "42": 2375,
+      "43": 2375,
+      "44": 2375
+    },
+    "risk_mlp_updates_by_method": {
+      "persistent_mlp": [
+        1350,
+        1350,
+        1350
+      ],
+      "onset_mlp": [
+        1350,
+        1350,
+        1350
+      ]
+    }
+  },
+  "source_state_sha256": "6f0a1451bd83728ac2e3dbf89cf84b5c000a1edbc088d31e0718b503d6248248",
+  "source_execution_manifest_sha256": "bf2263885728f6609e63b638e76ae4d80fa9fd31b347883d3747031b1775f749",
+  "source_logs_included": false,
+  "source_paths_omitted": true,
+  "not_proof_of_record_authenticity": true
+}

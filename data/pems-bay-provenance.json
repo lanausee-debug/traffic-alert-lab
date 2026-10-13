@@ -1,0 +1,21 @@
+{
+  "dataset": "PEMS-BAY",
+  "acquired_at_utc": "2026-10-11T02:59:41.300152+00:00",
+  "original_project": "https://github.com/liyaguang/DCRNN#data-preparation",
+  "original_folder_file_id": "1wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq",
+  "distribution_url": "https://drive.usercontent.google.com/download?id=1wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq&export=download&confirm=t",
+  "sha256": "65d69fb0a2323dba9867179eb7af47c8b814186bc459ff0a4937d21614153c8f",
+  "bytes": 135930936,
+  "checksum_source": "inspected HuggingFace LFS metadata, not an author-published checksum",
+  "mirror_repository": "jimmygao3218/PEMSBAY",
+  "mirror_revision": "c858397fb381d82c3d55ad0a81beb51a9bb9bdaa",
+  "attempts": [
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq&export=download&confirm=t",
+      "status": "size_and_sha256_verified"
+    }
+  ],
+  "traffic_values_deserialized": false,
+  "redistribution_authorized": false,
+  "license_note": "Mirror card labels CC-BY-4.0; original dataset redistribution terms not independently verified."
+}

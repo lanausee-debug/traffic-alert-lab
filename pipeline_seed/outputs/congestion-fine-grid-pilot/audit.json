@@ -1,0 +1,26 @@
+{
+  "audit_status": "passed",
+  "source_hashes_unchanged": true,
+  "artifact_sha256": {
+    "calibration_frozen.json": "cc1f8957d65eb37cf168f0ab4a200e471bd534a019f2c9fd02b6b445642345e7",
+    "calibration_grid_daily.npz": "45d3e8b7a755a8e8b14ecfd360fe273b5ce53d88798f6e0e12c342076f5ebac4",
+    "calibration_selected_daily.npz": "b5fedbd9295fa8d18dd773e87a020d74bd642882ed73a8a5caf17c1fda9c62b3",
+    "daily_metrics.npz": "cb4a3a3a4906d30afc2d3dfb8493a0d669298a56bc040051b1aa7abba51e702b",
+    "event_records.json": "8e3938d76203d931dc0c644db82b43fd8c5dd91abf1e845838fc00199e2f5645",
+    "scores_calibration.npz": "04cd3f045e4e71c717bda80088a533243f5f661a04bdbd4f6283c713dc419a84",
+    "scores_evaluation.npz": "b288da2d229dccb9397a3af3b1cc9a9a23da6d9818305d2d58aeee81fcf0b7a6",
+    "selection.json": "d6c72360cdc41aea87bafd3ec8d26f1eb9d3ccafe1c1b549acf9c54e355f4977"
+  },
+  "audit_script_sha256": "46f4dc7b61066a45d759c65f505a2ca058d2bb499e1817b62a286710f11668a4",
+  "prior_passed_weight_probability_audit_and_all_source_hashes_unchanged": true,
+  "all_score_copies_byte_equal_to_prior_arrays": true,
+  "fixed_ranges_steps_and_coarse_grid_inclusion_checked": true,
+  "verified_calibration_operating_points": 4504,
+  "verified_scenario_calibration_daily_arrays": 13512,
+  "independent_rank_budget_choices_and_simple_reference_checked": true,
+  "selection_artifact_hashes_saved_before_evaluation_and_unchanged": true,
+  "raw_event_targets_masks_coarse_results_and_all_selected_daily_metrics_checked": true,
+  "independent_selected_and_coarse_event_records_verified": 105690,
+  "two_primary_date_bootstrap_comparisons_recomputed": true,
+  "nonmonotonic_alert_count_example_checked": true
+}

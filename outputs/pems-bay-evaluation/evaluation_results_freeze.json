@@ -1,0 +1,25 @@
+{
+  "stage": "held_out_evaluation_completed_and_independently_audited",
+  "frozen_at_utc": "2026-10-11T11:59:27.100088+00:00",
+  "execution_freeze_sha256": "0acddd904378b03b1909663a29a95e0b12ea5d43853e260e53a4e6f3a9775f18",
+  "evaluation_values_read": true,
+  "evaluation_data_now_analyzed": true,
+  "verdict": {
+    "executable": true,
+    "both_primary_ci975_lower_bounds_positive": false,
+    "primary_metric_supported": false,
+    "overall_service_improvement_established": false,
+    "algorithm_originality_established": false,
+    "evaluation_data_analyzed_after_this_run": true
+  },
+  "source_sha256": {
+    "outputs/pems-bay-evaluation/results.json": "3135cd4c7f8665cf0db0608ab298248b5f43c950b77e01148c62db3877ccf279",
+    "outputs/pems-bay-evaluation/audit.json": "7ebde6a4cc1ef28ac646665aac4bb71204510932f5c078e33a31d6f994a05f19",
+    "outputs/pems-bay-evaluation/report.zh-CN.md": "8ddcc6d1a241cfa711d44989d817ed7cc0e8512438d8efb60f00859033228a25",
+    "outputs/pems-bay-evaluation/summary.png": "0d5a22f988a038bfd4adcc205fbbe0fe1dc8354984d3ba727bddc9ae1e3f9822",
+    "outputs/pems-bay-evaluation/summary.svg": "b651ab3d09f7d991f42d5e9ebec92b67e33ea0c4c8ae59b9eeefa9ef4eec7a7d",
+    "outputs/pems-bay-evaluation/primary_comparisons.png": "58decbe447437c0f085bdb9d874fa9b2d90827585f2cdf4e183eb00c77dbba44",
+    "outputs/pems-bay-evaluation/primary_comparisons.svg": "c08192772f1c6b83ce3797bee8b8dbe672fb7e487558ec42c65d8d630c49646d",
+    "summarize_pems_bay_evaluation.py": "bb44223afac68965e7f4c0650a63f05fb35cf3f5fd738f007f2ee347c79f3d28"
+  }
+}

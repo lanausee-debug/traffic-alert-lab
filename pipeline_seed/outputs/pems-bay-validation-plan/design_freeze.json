@@ -1,0 +1,25 @@
+{
+  "protocol_id": "pems-bay-alert-validation-v1",
+  "frozen_at_utc": "2026-10-10T14:55:22.083302+00:00",
+  "freeze_kind": "local_design_only",
+  "validation_executed": false,
+  "data_access_audit_passed": false,
+  "dataset_present_at_freeze": false,
+  "source_sha256": {
+    "configs/pems_bay_validation_v1.json": "2c19fce6dfd2f7b769b251e7c6e8f7872e50a1d6050f1d38a1942c7774a8c5f5",
+    "freeze_external_validation.py": "6aba67490ee5a3d8fef0722f178218e6e90c3a2a2836c4492ac0b4d0d9605767",
+    "docs/thesis_contribution_boundary.zh-CN.md": "503fbe884e183eb44674e128284dbe70ae059a778d591dbe68dfe45f6881709e",
+    "docs/pems_bay_validation_protocol.zh-CN.md": "8dd8cfa179ef6a870b7ac0204c0dd01f835f7082dd1110edd1c04570c6804ade",
+    "fresh_holdout_pilot.py": "4fb263f3dc50e445d2c262a1d767d2920b87af9b42d3e15277da36cd12dfcf28",
+    "recovery_pilot.py": "f98d49ef94f843561bd10a4d72a08cdfadccb5f4919f6750396ad4d516c3d864",
+    "congestion_alert_pilot.py": "8c6ecef35fdb9e676ab3de8e86c25f6e2bbef38bde95aa4717e270eaf8e15934",
+    "congestion_risk_pilot.py": "c927d0b5274e1a85e6d4f67732a02dd5032612bfb3bc9864db500111ec7e5567",
+    "congestion_solver_audit.py": "4b13a7eb24b7be875ea276f2d9aaacb47fcb2c609508dae701c322480533dcea",
+    "congestion_density_pilot.py": "8e6773e614ffd6a7041e752f7ef51f53c4a38fbd28d4cb0b05b4f27af4933581",
+    "outputs/congestion-fine-grid-pilot/config.json": "541e17cd06ebdf3fd74a2e4780f074bbbc02780106402935262c2198d9d0f120",
+    "outputs/congestion-fine-grid-pilot/results.json": "d32831d93a9589b27d35618d8025feacea048f2cfa9e931d6871ac146a87f814",
+    "outputs/congestion-fine-grid-pilot/audit.json": "7c71c89aa9b87a002d09fb267f5f54819f3edbfc11c225f25120bb3be70f178d",
+    "outputs/congestion-fine-grid-pilot/selection.json": "d6c72360cdc41aea87bafd3ec8d26f1eb9d3ccafe1c1b549acf9c54e355f4977",
+    "docs/congestion_stage8_findings.zh-CN.md": "d80d3f63872481224d0e53ef4e9980fc220a115a81adcd7a770023712694f863"
+  }
+}

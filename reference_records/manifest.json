@@ -1,0 +1,23 @@
+[
+  {
+    "original_path": "outputs/pems-bay-calibration/selection.json",
+    "original_sha256": "dce1b85dc0c0868e228c091d2e7838c48cc1afb9050600006cb5d44104fde2ce",
+    "original_bytes": 11652090,
+    "compressed_path": "reference_records/record-1.json.gz",
+    "compressed_sha256": "76827586b7a6987d773af569a73211c96524d2f70cc5ff9e2542beadaa1efce2"
+  },
+  {
+    "original_path": "pipeline_seed/outputs/congestion-fine-grid-pilot/results.json",
+    "original_sha256": "d32831d93a9589b27d35618d8025feacea048f2cfa9e931d6871ac146a87f814",
+    "original_bytes": 4512221,
+    "compressed_path": "reference_records/record-2.json.gz",
+    "compressed_sha256": "4cad2697e6631ee73289a08f7d3936c0e55acec5f505087e884033ce16c8cf1b"
+  },
+  {
+    "original_path": "pipeline_seed/outputs/congestion-fine-grid-pilot/selection.json",
+    "original_sha256": "d6c72360cdc41aea87bafd3ec8d26f1eb9d3ccafe1c1b549acf9c54e355f4977",
+    "original_bytes": 3593453,
+    "compressed_path": "reference_records/record-3.json.gz",
+    "compressed_sha256": "73de0e6a58e31cd1851141f817725adf2adf4fce70f624a7345992be0a2c0787"
+  }
+]

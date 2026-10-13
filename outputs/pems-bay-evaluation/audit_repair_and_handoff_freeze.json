@@ -1,0 +1,13 @@
+{
+  "stage": "post_unseal_numeric_audit_repair_and_handoff",
+  "frozen_at_utc": "2026-10-11T12:02:17.351559+00:00",
+  "production_results_changed": false,
+  "source_sha256": {
+    "complete_pems_bay_evaluation_audit.py": "6ba8efab5babee920dc9426df9dbbfe5d9e85991c264a1b63497c87fa0696289",
+    "outputs/pems-bay-evaluation/numeric_audit_comparator_repair.json": "0e381ce3fc4b6c30a0703b1ca891f37a9292698106c4ea20c71971ea792a3eb3",
+    "outputs/pems-bay-evaluation/numeric_audit_repair.zh-CN.md": "d347b3872178b2aa572450c8ff2c0849b469921c147ef2adba2eb1e4a4379e2f",
+    "outputs/pems-bay-evaluation/audit.json": "7ebde6a4cc1ef28ac646665aac4bb71204510932f5c078e33a31d6f994a05f19",
+    "outputs/pems-bay-evaluation/evaluation_results_freeze.json": "1a79d91447fda86e1797a9b763b1a2a0354c1f4558b7be785a981dfe44364731",
+    "docs/pems_bay_evaluation_handoff.zh-CN.md": "94748d911257c4dc288a6fa08b00972658b0dffd52786e2fd86598f13bd3f110"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "mirror_jimmy": {
+    "url": "https://huggingface.co/api/datasets/jimmygao3218/PEMSBAY?blobs=true",
+    "revision": "c858397fb381d82c3d55ad0a81beb51a9bb9bdaa",
+    "files": [
+      {
+        "rfilename": ".gitattributes",
+        "blobId": "1ef325f1b111266a6b26e0196871bd78baa8c2f3",
+        "size": 2461
+      },
+      {
+        "rfilename": "PEMS-BAY.h5",
+        "blobId": "b927e88bdb094fe2e32f92c0f3794db8852f0fc0",
+        "size": 135930936,
+        "lfs": {
+          "sha256": "65d69fb0a2323dba9867179eb7af47c8b814186bc459ff0a4937d21614153c8f",
+          "size": 135930936,
+          "pointerSize": 134
+        }
+      },
+      {
+        "rfilename": "README.md",
+        "blobId": "177a79bf567574d8325e6e966d9fbe99e862a8a9",
+        "size": 59
+      },
+      {
+        "rfilename": "adj_mx_bay.pkl",
+        "blobId": "d4750977210fa7050f178406c0e5021eb8c75193",
+        "size": 1681480,
+        "lfs": {
+          "sha256": "116275f5704d0d492018e14c047f7ae5004385b450aa907f88424055a4a97370",
+          "size": 1681480,
+          "pointerSize": 132
+        }
+      }
+    ],
+    "card_data": {
+      "license": "cc-by-4.0"
+    }
+  },
+  "mirror_witgaw": {
+    "url": "https://huggingface.co/api/datasets/witgaw/PEMS-BAY?blobs=true",
+    "revision": "4c488d8ce974a326b4d09bcbdd6f6fdc8fb5fd67",
+    "files": [
+      {
+        "rfilename": ".gitattributes",
+        "blobId": "1ef325f1b111266a6b26e0196871bd78baa8c2f3",
+        "size": 2461
+      },
+      {
+        "rfilename": "README.md",
+        "blobId": "463c237df846699a8e0c3685cf9e6b05fc1396c4",
+        "size": 3622
+      },
+      {
+        "rfilename": "sensor_graph/README.md",
+        "blobId": "bca89834e2379c6fe7be8c2efdd1ec8f6cff001e",
+        "size": 1293
+      },
+      {
+        "rfilename": "sensor_graph/adj_mx.npy",
+        "blobId": "2b897dff128bc41adb85cf9a9ba89855d5b3b2cb",
+        "size": 422628,
+        "lfs": {
+          "sha256": "bfe332913480221f0c1e67ff6c7a5ea8896a70a8fc2f6ff04b052842b91072b9",
+          "size": 422628,
+          "pointerSize": 131
+        }
+      },
+      {
+        "rfilename": "sensor_graph/adj_mx_mapping.json",
+        "blobId": "ae625db2974a80d6fcde660aaf7656e5aba25358",
+        "size": 4878
+      },
+      {
+        "rfilename": "sensor_graph/distances.csv",
+        "blobId": "eaf8cbd3da330a05cd79f228651e68d3588f2664",
+        "size": 175784
+      },
+      {
+        "rfilename": "sensor_graph/sensor_locations.csv",
+        "blobId": "eac8d0dd6efca8c1c67fbe0e3d0b68a3b4b829fa",
+        "size": 9394
+      },
+      {
+        "rfilename": "test.parquet",
+        "blobId": "a00e733f29277e14334ed2661f658824b026dd12",
+        "size": 103075696,
+        "lfs": {
+          "sha256": "2609349550deb426f7641bca96fd7eb2f7f2ccf211f3e6b30f1364c52d495be1",
+          "size": 103075696,
+          "pointerSize": 134
+        }
+      },
+      {
+        "rfilename": "train.parquet",
+        "blobId": "9ae5f1934fe230581a633df0fb3add54cf073d53",
+        "size": 360428297,
+        "lfs": {
+          "sha256": "16842a2d66f299662db9c67242136b54d59877291ed6006dc6bac0008698f1aa",
+          "size": 360428297,
+          "pointerSize": 134
+        }
+      },
+      {
+        "rfilename": "val.parquet",
+        "blobId": "58382aa272cbeee219229215a7a34b092053d374",
+        "size": 51524700,
+        "lfs": {
+          "sha256": "1b6beb672fb831417a96577127e545c9529bdb14e5aa5b7aad3709d1d85999b6",
+          "size": 51524700,
+          "pointerSize": 133
+        }
+      }
+    ],
+    "card_data": {
+      "license": "mit",
+      "task_categories": [
+        "time-series-forecasting",
+        "tabular-regression"
+      ],
+      "tags": [
+        "traffic-prediction",
+        "time-series",
+        "graph-neural-networks",
+        "transportation"
+      ],
+      "size_categories": [
+        "10M<n<100M"
+      ]
+    }
+  },
+  "original_folder": {
+    "url": "https://drive.google.com/drive/folders/10FOTa6HXPqX8Pf5WRoRwcFnW9BrNZEIX",
+    "html_bytes": 316447,
+    "filename_contexts": [
+      "decoding=\"async\" class=\"yix69e\" src=\"\" alt=\"Binary\"></div></div></div></div></div></div><div class=\"rxUYqf\" jsaction=\"error:piPPke\" jsname=\"XJXImb\"><div class=\"JxSEve\" aria-label=\"pems-bay.h5 Binary Shared\" data-handled-by-drag-and-drop=\"true\" ssk='5:auSv138:1wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq-0-16'><i role=\"presentation\" class=\"cUCuw   upe",
+      "='6:by9fbe38:1wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq-0-16' data-id=\"1wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq\" jsname=\"vtaz5c\" data-tooltip-class=\"cAHxfe\" data-tooltip-delay=\"500\" data-tooltip=\"pems-bay.h5 Binary\"><span class=\"WQJtxb\" ssk='5:xyMN01#0'><strong class=\"DNoYtb\">pems-bay.h5</strong></span></div><div data-title-inline=\"badges\" class=\"egymZe\"",
+      "fZvDh1LpDegMMq\" jsname=\"vtaz5c\" data-tooltip-class=\"cAHxfe\" data-tooltip-delay=\"500\" data-tooltip=\"pems-bay.h5 Binary\"><span class=\"WQJtxb\" ssk='5:xyMN01#0'><strong class=\"DNoYtb\">pems-bay.h5</strong></span></div><div data-title-inline=\"badges\" class=\"egymZe\"><div class=\"eIs6Bc JCGPoc\" jscontroller=\"YlnYEb\" jsaction=\"click:FemtBc(preventD",
+      "l,\\x5b0,\\x5b\\x5b0,\\x22Video is not available for this file.\\x22\\x5d\\x5d\\x5d\\x5d,\\x5b\\x221wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq\\x22,\\x5b\\x2210FOTa6HXPqX8Pf5WRoRwcFnW9BrNZEIX\\x22\\x5d,\\x22pems-bay.h5\\x22,\\x22application\\/octet-stream\\x22,0,null,0,0,0,1546974947168,1508911962000,null,null,135930936,\\x5b\\x5b1,\\x2203363797297437858590\\x22,null,null,",
+      "ull,null,null,null,null,1,null,null,null,[[2]],null,null,null,null,null,null,null,null,[[[\"\"],[null,[\"application/octet-stream\"]],null,null,null,\"Binary\"],null,[[16,null,[null,[[[\"pems-bay.h5\",null,1]]]],null,null,[[[\"pems-bay.h5\",null,1],[\"Binary\"]]],null,null,1,[[[\"pems-bay.h5\"],[\"Binary\"],[\"Shared\"]]]],[2,null,[null,[[[\"2017年10月25日\"]]]",
+      "ll,[[2]],null,null,null,null,null,null,null,null,[[[\"\"],[null,[\"application/octet-stream\"]],null,null,null,\"Binary\"],null,[[16,null,[null,[[[\"pems-bay.h5\",null,1]]]],null,null,[[[\"pems-bay.h5\",null,1],[\"Binary\"]]],null,null,1,[[[\"pems-bay.h5\"],[\"Binary\"],[\"Shared\"]]]],[2,null,[null,[[[\"2017年10月25日\"]]]],null,null,[[[\"2017年10月25日\"]]],null,n",
+      "[[\"\"],[null,[\"application/octet-stream\"]],null,null,null,\"Binary\"],null,[[16,null,[null,[[[\"pems-bay.h5\",null,1]]]],null,null,[[[\"pems-bay.h5\",null,1],[\"Binary\"]]],null,null,1,[[[\"pems-bay.h5\"],[\"Binary\"],[\"Shared\"]]]],[2,null,[null,[[[\"2017年10月25日\"]]]],null,null,[[[\"2017年10月25日\"]]],null,null,1,[[[\"Modified\"],[\"2017年10月25日\"]]],null,null,n",
+      "5日\"]]]],null,[[2,\"Download\",0,2,null,[[null,\"1wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq\"]],null,null,null,\"Download\"]],\"More actions\"],null,null,null,null,null,null,null,null,null,null,[[[\"pems-bay.h5\",null,1]]],null,null,null,null,null,[[],null,[],null,[1]],null,null,null,null,null,null,null,null,0,null,null,[55465,\"application/octet-stream\",[[nu"
+    ]
+  },
+  "inspected_at_utc": "2026-10-11T02:58:17.925166+00:00"
+}

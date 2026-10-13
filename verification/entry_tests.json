@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-10-11T13:07:48.160450+00:00",
+  "scope": "isolation_failure_and_scoring_compatibility_tests",
+  "observed_test_execution": "9 tests passed in the tool-returned unittest output; initial sandbox temporary-directory denial retained in conversation",
+  "passed": true,
+  "cases": [
+    "test_original_outputs_and_parent_roots_are_rejected",
+    "test_manifest_paths_cannot_escape",
+    "test_resume_cannot_skip_a_failed_stage_or_claim_fresh_confirmation",
+    "test_changed_source_fails_integrity",
+    "test_existing_workspace_is_never_overwritten",
+    "test_stage_error_is_logged_and_stops_before_later_stages",
+    "test_lock_refuses_a_second_writer",
+    "test_float_lists_allow_rounding_but_not_changed_counts_or_structure",
+    "test_risk_adapter_does_not_change_nonempty_scores_or_weights"
+  ],
+  "test_source_sha256": "65e24265dc1cfc5dddc89c0aab257248cb94c8d5c4b447178f707f94626a2263",
+  "runner_sha256": "8f270ed5e788ea7c27c7757fd5676f88abf5b1c1f4e9cc9201742639ecd791d1",
+  "full_training_validation_status": "running_separately",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

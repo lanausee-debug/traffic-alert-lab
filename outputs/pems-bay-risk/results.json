@@ -1,0 +1,114 @@
+{
+  "completed_at_utc": "2026-10-11T10:43:31.439750+00:00",
+  "stage": "risk_train_and_risk_validation_only",
+  "partitions": {
+    "risk_train": {
+      "origins": 8024,
+      "candidate_origins_before_time_gap_filter": 8038,
+      "unique_three_reading_valid_points": 192576,
+      "unique_common_six_reading_points": 192480,
+      "pooled_rows": 577440,
+      "unique_persistent_positives": 3140,
+      "unique_onset_positives": 594,
+      "excluded_from_supervision": 96,
+      "first_timestamp": "2017-02-19T00:00:00.000000000",
+      "last_timestamp": "2017-03-18T23:55:00.000000000",
+      "preparation_seconds": 24.713992999999846
+    },
+    "risk_validation": {
+      "origins": 2002,
+      "candidate_origins_before_time_gap_filter": 2002,
+      "unique_three_reading_valid_points": 48048,
+      "unique_common_six_reading_points": 48000,
+      "pooled_rows": 144000,
+      "unique_persistent_positives": 847,
+      "unique_onset_positives": 165,
+      "excluded_from_supervision": 48,
+      "first_timestamp": "2017-03-19T00:00:00.000000000",
+      "last_timestamp": "2017-03-25T23:55:00.000000000",
+      "preparation_seconds": 6.671783100000084
+    }
+  },
+  "validation": {
+    "persistent_target_Y": {
+      "global_calibration": {
+        "bce": 0.01381397063176677,
+        "brier": 0.003641246426559126,
+        "rows": 144000,
+        "positives": 2541
+      },
+      "group_calibration": {
+        "bce": 0.012164175036835194,
+        "brier": 0.0034610443981600986,
+        "rows": 144000,
+        "positives": 2541
+      },
+      "state_logistic": {
+        "bce": 0.011818154060127723,
+        "brier": 0.003573910008517035,
+        "rows": 144000,
+        "positives": 2541
+      },
+      "persistent_mlp": {
+        "bce": 0.013842716452266063,
+        "brier": 0.004035857512360496,
+        "rows": 144000,
+        "positives": 2541
+      }
+    },
+    "onset_target_Z": {
+      "onset_linear": {
+        "bce": 0.013987247199740541,
+        "brier": 0.003236488072629555,
+        "rows": 144000,
+        "positives": 495
+      },
+      "onset_mlp": {
+        "bce": 0.01235548482005336,
+        "brier": 0.002921930332964205,
+        "rows": 144000,
+        "positives": 495
+      }
+    }
+  },
+  "elapsed_seconds": 1.9949481000003289,
+  "risk_training_executed": true,
+  "calibration_executed": false,
+  "evaluation_values_read": false,
+  "held_out_evaluation_executed": false,
+  "artifact_sha256": {
+    "access_log.json": "be9c32f7d6db8d8a88ba96056bad63955f6815514d7c087cd812d49ea349bcaa",
+    "config.json": "7644922cbda6b0cac65b3e537e2cf96bedd21a1f2552ed282ac15342277ac27e",
+    "empty_group_adapter.json": "5f8ec0c8a1e848b04dd273de33df1e067569f20acb28c0f6f621e9077d745197",
+    "global_calibration.json": "90448ccd2f421721a075add15bfbe744de3ceaa5f528c3cda33128ad3e5b9114",
+    "global_calibration.pt": "669826bb032ae8615d52c2a46d2a6dab8f9b10d8b66b67c5e8ad2c13e7ed0f0d",
+    "group0.json": "0eb13864e0680cd4d5ee9566bc7e9edbaa278661903beeaaf7b806962fc44032",
+    "group0.pt": "e1e9c14f17832067c67166a32c4553e9636e95eb49a7fc672fe2190bccaabcbc",
+    "group2.json": "56c38251b5a6dcf0f50ffdd071a75ce2cf6313a417a0a54a8aaaa2d22ed40d3f",
+    "group2.pt": "46813bb5756d1aa1788b6addeaebdf5831455f05382062995f9c73b4b6fa37c7",
+    "model_selection.json": "4b625bc4426301374c2cba8fca0075e948548928da7e98d996eac76b5a7642ee",
+    "normalization.npz": "cdce61f6e0928dc4efb362d19bbca96de81d460d12880ce5d6092403c0492a74",
+    "onset_linear.json": "68a62e85457ab2ec28fee7c1570459df50c6d260b5c9690ee0b403de15d66d15",
+    "onset_linear.pt": "b16912b63a4672c75501ecbb7b3df80aee41bb09a421eba5ccfb84f9cfd30085",
+    "onset_mlp_seed202.json": "51d00fc4d9bbe8ea15f01f6b0fe674f0911adbc742af387288a6ec1d70ae4172",
+    "onset_mlp_seed202.pt": "50e5041bc8eb44cc4ac69805f242061c41c17c96c377cce262f268405df7c73d",
+    "onset_mlp_seed203.json": "1dd83ba0fb87c3a882651f0cfc8af7ac8ebef0aefb4945506d7f89c699b98f32",
+    "onset_mlp_seed203.pt": "4ec48af3e156ee9c9eb4e506d90db3a9e1d7d0773e4840f0ad8cc7471635d206",
+    "onset_mlp_seed204.json": "62085619f6488d5f4eec8a08e88f377c4f5bd7d3642aad4e0f32531f1a2654cc",
+    "onset_mlp_seed204.pt": "2100a269c51bf57dedcfab9232b43cf5eee437ec7ae3a3efc2e6dbe22c5e4d0d",
+    "persistent_mlp_seed202.json": "c28ecdbba2470ae7b5285a254af3ed11fd6bc36b9016c26af3c5079b8f8e7b10",
+    "persistent_mlp_seed202.pt": "a1789c2c57d4f17d045f23a4186e1c00af590ed3b3ce7aa887b3b8fd4bdff9bd",
+    "persistent_mlp_seed203.json": "1e70ef326c8621fea5d5f2923832c1b82a28b59c9f904e48b358151fa0b5794b",
+    "persistent_mlp_seed203.pt": "e15fb7f24cb59c247e0545f5fecfc173acf55662d6ad776fc9c0cbc5cedff13c",
+    "persistent_mlp_seed204.json": "af054c4ed79cbd11d19501cca418f7f96bfc44843a93e342f4ad37f1f1873c3c",
+    "persistent_mlp_seed204.pt": "c10b2bb8ac9a7fb05b2410d1eef42ccfde3438c0324491a340cd961e862ba813",
+    "risk_train.json": "4a0a0ce701541f7b585f09f32b79a80b2f7e5e1ffec1d2fb60164d66dcf03683",
+    "risk_train.npz": "95a1127922578105fddf10d2af5a6e49cf62a8e4572eef06e167ab3769412086",
+    "risk_validation.json": "33f333009ef793cf4a5f684625bcd70f0d64367ab972c434146ed0d71ad6287e",
+    "risk_validation.npz": "96273b8af1c0db12574a9e96917428308820874487e5644b653ee69ace46345e",
+    "scores_risk_train.npz": "e1cbfc0594969cbe58d4640c0f25e4849f46605c98be4edf51415262870bc640",
+    "scores_risk_validation.npz": "0764bd34054d508e8488818840a3843d232294120bb4b6d76e5f548f1cfe8017",
+    "state_logistic.json": "b9bdeb411e65b976678a4ad8e30065ef54ff3cec9373fc1c56059f97d7412c0d",
+    "state_logistic.pt": "f2e5e7087a87341a1a34c23ceb501fc94a12cd00a3ef4e431b9eabec08a2f2b8"
+  }
+}

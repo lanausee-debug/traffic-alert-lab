@@ -1,0 +1,25 @@
+{
+  "recorded_at_utc": "2026-10-11T11:59:02.240409+00:00",
+  "stage": "post_unseal_audit_implementation_repair_only",
+  "reason": "Original assert_same tolerates scalar float rounding but compares CI lists with exact Python equality. Independent exposure accumulation differs at about 1e-14 in a false-rate CI.",
+  "example_reference_ci": [
+    -0.1300684751541042,
+    -0.07352022431224627
+  ],
+  "example_independent_ci": [
+    -0.1300684751540859,
+    -0.0735202243122359
+  ],
+  "change": "Apply the already-used scalar float tolerance recursively to list elements. Integer counts, shapes, keys, labels, settings and records retain exact comparisons.",
+  "float_absolute_tolerance": 1e-10,
+  "float_relative_tolerance": 1e-12,
+  "production_results_or_models_or_settings_or_verdict_changed": false,
+  "evaluation_data_already_analyzed": true,
+  "preserved_source_sha256": {
+    "adapter": "6ba8efab5babee920dc9426df9dbbfe5d9e85991c264a1b63497c87fa0696289",
+    "frozen_audit": "7186203dca8a26a4a2dfaa18a4aec63838b2939fd4ca59756409401821b2b7d7",
+    "execution_freeze": "0acddd904378b03b1909663a29a95e0b12ea5d43853e260e53a4e6f3a9775f18",
+    "evaluation_results": "3135cd4c7f8665cf0db0608ab298248b5f43c950b77e01148c62db3877ccf279",
+    "calibration_selection": "dce1b85dc0c0868e228c091d2e7838c48cc1afb9050600006cb5d44104fde2ce"
+  }
+}

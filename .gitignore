@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.mplconfig/
+.tmp/
+runs/
+data/raw/
+*.pyc
+*.pt
+*.npz
+*.h5
+*.zip
+
+/outputs/pems-bay-calibration/selection.json
+
+/pipeline_seed/outputs/congestion-fine-grid-pilot/results.json
+
+/pipeline_seed/outputs/congestion-fine-grid-pilot/selection.json

@@ -1,0 +1,25 @@
+{
+  "stage": "documentation_only_from_frozen_results",
+  "date": "2026-10-11",
+  "source_sha256": {
+    "outputs/pems-bay-evaluation/results.json": "3135cd4c7f8665cf0db0608ab298248b5f43c950b77e01148c62db3877ccf279",
+    "outputs/pems-bay-evaluation/audit.json": "7ebde6a4cc1ef28ac646665aac4bb71204510932f5c078e33a31d6f994a05f19",
+    "outputs/pems-bay-calibration/selection.json": "dce1b85dc0c0868e228c091d2e7838c48cc1afb9050600006cb5d44104fde2ce",
+    "outputs/pems-bay-forecaster/results.json": "adaacace4769388ee320586884d458e0661d1be87f9099744645658c2de2741e",
+    "outputs/pems-bay-risk/results.json": "c5db8784ec4f3cad85556647d7b6db79b5359e54f39d3fedcc2c50c842c5f587",
+    "outputs/pems-bay-evaluation/numeric_audit_comparator_repair.json": "0e381ce3fc4b6c30a0703b1ca891f37a9292698106c4ea20c71971ea792a3eb3",
+    "outputs/pems-bay-evaluation/execution_freeze.json": "0acddd904378b03b1909663a29a95e0b12ea5d43853e260e53a4e6f3a9775f18",
+    "outputs/pems-bay-evaluation/evaluation_results_freeze.json": "1a79d91447fda86e1797a9b763b1a2a0354c1f4558b7be785a981dfe44364731",
+    "outputs/pems-bay-evaluation/audit_repair_and_handoff_freeze.json": "66a1173faca78d11e299c5d1fce2b03b8025ac7be224bb6aaf4856f15da92e14",
+    "docs/thesis_experiment_discussion.template.zh-CN.md": "65e4cb6a543d65e9e031585ec3e162418332324bd92a8fead3b15749dc62de4d",
+    "build_thesis_experiment_draft.py": "4917978f3329a2f20151de4cb94416f85ac7174d3b1abedc9d68fefd7681ff54"
+  },
+  "generated_sha256": {
+    "docs/thesis_experiment_discussion.zh-CN.md": "8b05c1fae1c1c8f04265d4c971ed0205ab6fca2630b2ded400b03fa511bda989",
+    "docs/thesis_result_tables.zh-CN.md": "336e3823d370d5461f000abaea24f5c5c7f2ad1fae66d10f1eebd9bfdb1a33d7",
+    "outputs/pems-bay-thesis-draft/tables.json": "7fa7d4d70a9cdad715c9abe070f3054accaee6cb4f659a0d6cbe15c2f990e801"
+  },
+  "evaluation_data_already_analyzed": true,
+  "primary_metric_supported": false,
+  "not_a_new_independent_validation": true
+}

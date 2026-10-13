@@ -1,0 +1,222 @@
+{
+  "kind": "immutable_reproduction_seed",
+  "dataset_already_analyzed": true,
+  "copied_fitted_pems_bay_stages": false,
+  "original_source_files_edited": false,
+  "local_import_closure_included": true,
+  "original_execution_freeze_sha256": "0acddd904378b03b1909663a29a95e0b12ea5d43853e260e53a4e6f3a9775f18",
+  "files": {
+    "audit_pems_bay_calibration.py": {
+      "bytes": 19251,
+      "sha256": "e1dbd9946512b44dd03ad28dac0d61082e08864eafc63080e93ebadf69bb2c3d"
+    },
+    "audit_pems_bay_evaluation.py": {
+      "bytes": 15799,
+      "sha256": "7186203dca8a26a4a2dfaa18a4aec63838b2939fd4ca59756409401821b2b7d7"
+    },
+    "audit_pems_bay_forecaster.py": {
+      "bytes": 11391,
+      "sha256": "1a0c1d2f2040c21f64fee93ece6b8cb49a3d14f594b36e620a2fca8d8dd703fd"
+    },
+    "audit_pems_bay_reader.py": {
+      "bytes": 10715,
+      "sha256": "c2d4174265fde84b773accf401b028a9805db51cceba89fbd21ed837b6a4901a"
+    },
+    "audit_pems_bay_risk.py": {
+      "bytes": 12904,
+      "sha256": "e9329939140fc123200e1e965c4552e0744b177f4869ca5aef3d154f4e9faf45"
+    },
+    "bind_pems_bay.py": {
+      "bytes": 4359,
+      "sha256": "8904cb646081792edba8ea2eee29f7d9badf3dfb1c961fa50c819e32bfe343d4"
+    },
+    "calibrate_pems_bay_alerts.py": {
+      "bytes": 12699,
+      "sha256": "c57ba05e8e54f42240d264d9c4c5e6b158133c9bc44e1755e21002dfba8eb4cf"
+    },
+    "complete_pems_bay_evaluation_audit.py": {
+      "bytes": 4488,
+      "sha256": "6ba8efab5babee920dc9426df9dbbfe5d9e85991c264a1b63497c87fa0696289"
+    },
+    "complete_pems_bay_risk.py": {
+      "bytes": 1966,
+      "sha256": "edf6340e66b59d6037eb4c14ccdb542cf5b0096e04c268377bf65cc3c6263f82"
+    },
+    "configs/pems_bay_validation_v1.json": {
+      "bytes": 7412,
+      "sha256": "2c19fce6dfd2f7b769b251e7c6e8f7872e50a1d6050f1d38a1942c7774a8c5f5"
+    },
+    "congestion_ablation.py": {
+      "bytes": 13825,
+      "sha256": "0e388403744bebd47783242466474f8dfad7c37ecf120244a86b9f4a98f0cb42"
+    },
+    "congestion_alert_pilot.py": {
+      "bytes": 22984,
+      "sha256": "8c6ecef35fdb9e676ab3de8e86c25f6e2bbef38bde95aa4717e270eaf8e15934"
+    },
+    "congestion_density_pilot.py": {
+      "bytes": 18741,
+      "sha256": "8e6773e614ffd6a7041e752f7ef51f53c4a38fbd28d4cb0b05b4f27af4933581"
+    },
+    "congestion_objective_diagnostic.py": {
+      "bytes": 18055,
+      "sha256": "a38ee164eece289b49f11e95b557f8823bb83512398dab2ccc77445010db47e9"
+    },
+    "congestion_onset_pilot.py": {
+      "bytes": 12062,
+      "sha256": "6fcb47cd7cf5624f220efbb4e30b7a9257ecb1f39c00a5db2afa6d7ed29ed03b"
+    },
+    "congestion_risk_pilot.py": {
+      "bytes": 21803,
+      "sha256": "c927d0b5274e1a85e6d4f67732a02dd5032612bfb3bc9864db500111ec7e5567"
+    },
+    "congestion_solver_audit.py": {
+      "bytes": 10078,
+      "sha256": "4b13a7eb24b7be875ea276f2d9aaacb47fcb2c609508dae701c322480533dcea"
+    },
+    "data/pems-bay-provenance.json": {
+      "bytes": 1086,
+      "sha256": "5d677a8c9203f5d48242f650d878a7e6cee2af61ff65c8b710db4f9729d7e3d3"
+    },
+    "data/source-metadata/pems-bay-discovery.json": {
+      "bytes": 7209,
+      "sha256": "73cf92e202fe00bccb662a8d808f12d30f95579210fd15b4ab5b3301a17bf30a"
+    },
+    "docs/congestion_stage8_findings.zh-CN.md": {
+      "bytes": 5735,
+      "sha256": "d80d3f63872481224d0e53ef4e9980fc220a115a81adcd7a770023712694f863"
+    },
+    "docs/pems_bay_calibration_protocol.zh-CN.md": {
+      "bytes": 3559,
+      "sha256": "934406b5c49f9cbeefa1ec6b84bc49b01872a081cfc2fde6e60a8742a8753c4b"
+    },
+    "docs/pems_bay_evaluation_protocol.zh-CN.md": {
+      "bytes": 4001,
+      "sha256": "1545a3fc28c2ad33fb48ae4d52ec7d45064ac2090d0cbc452931d634005cab75"
+    },
+    "docs/pems_bay_forecaster_protocol.zh-CN.md": {
+      "bytes": 2508,
+      "sha256": "e5f724727dad1040e438f2f08a79e2b31dca68e75741438d7e1bc3620ebdbb05"
+    },
+    "docs/pems_bay_risk_protocol.zh-CN.md": {
+      "bytes": 2649,
+      "sha256": "0e1de5f75247ef847f177e131aefcc5280674f35606be2cb9f1dfc8c36c9f974"
+    },
+    "docs/pems_bay_validation_protocol.zh-CN.md": {
+      "bytes": 10935,
+      "sha256": "8dd8cfa179ef6a870b7ac0204c0dd01f835f7082dd1110edd1c04570c6804ade"
+    },
+    "docs/thesis_contribution_boundary.zh-CN.md": {
+      "bytes": 6650,
+      "sha256": "503fbe884e183eb44674e128284dbe70ae059a778d591dbe68dfe45f6881709e"
+    },
+    "evaluate_pems_bay_alerts.py": {
+      "bytes": 10051,
+      "sha256": "b16e3d1f799b79e03f158e7fd8d9dad08614c57a4674fcc944ed430249c31160"
+    },
+    "fetch_pems_bay.py": {
+      "bytes": 4505,
+      "sha256": "84310162baef653b9cf8a92f49e0083e5844f14dec5e571f7e5aa5e38b2066b4"
+    },
+    "freeze_external_validation.py": {
+      "bytes": 6275,
+      "sha256": "6aba67490ee5a3d8fef0722f178218e6e90c3a2a2836c4492ac0b4d0d9605767"
+    },
+    "freeze_pems_bay_evaluation.py": {
+      "bytes": 5817,
+      "sha256": "940316ca02902e39ffbd5d5c5b6beab60adb0836661ad6ba0d1b2542da6cf6d9"
+    },
+    "fresh_holdout_pilot.py": {
+      "bytes": 15692,
+      "sha256": "4fb263f3dc50e445d2c262a1d767d2920b87af9b42d3e15277da36cd12dfcf28"
+    },
+    "multifault_pilot.py": {
+      "bytes": 23001,
+      "sha256": "fb58e0a078ba955687d8e41275e82539e8e354ba51b8b290f3e92fd98ebc9697"
+    },
+    "outputs/congestion-fine-grid-pilot/audit.json": {
+      "bytes": 1710,
+      "sha256": "7c71c89aa9b87a002d09fb267f5f54819f3edbfc11c225f25120bb3be70f178d"
+    },
+    "outputs/congestion-fine-grid-pilot/config.json": {
+      "bytes": 11616,
+      "sha256": "541e17cd06ebdf3fd74a2e4780f074bbbc02780106402935262c2198d9d0f120"
+    },
+    "outputs/congestion-fine-grid-pilot/results.json": {
+      "bytes": 4512221,
+      "sha256": "d32831d93a9589b27d35618d8025feacea048f2cfa9e931d6871ac146a87f814"
+    },
+    "outputs/congestion-fine-grid-pilot/selection.json": {
+      "bytes": 3593453,
+      "sha256": "d6c72360cdc41aea87bafd3ec8d26f1eb9d3ccafe1c1b549acf9c54e355f4977"
+    },
+    "outputs/pems-bay-validation-plan/design_freeze.json": {
+      "bytes": 1958,
+      "sha256": "8f78fab8108b10d4baac2e433a5b1cd6b5f9c07c350e2e4543976f36f0cdb431"
+    },
+    "pems_bay_alert_replay.py": {
+      "bytes": 4502,
+      "sha256": "a62f0db49f9cec51b6e83448c4241989c16839d2636eac45df4b7e7d80bd51fe"
+    },
+    "pems_bay_evaluation_gate.py": {
+      "bytes": 3357,
+      "sha256": "3975bb10b55da76eb6dc22b7f7291fa6114bac103b58828875a7966364773061"
+    },
+    "pems_bay_reader.py": {
+      "bytes": 9355,
+      "sha256": "12989d977a55c5ec9be5325003a74999544c6a40954d8e82914d7bc766e617fe"
+    },
+    "pems_bay_windows.py": {
+      "bytes": 2508,
+      "sha256": "f053c0508692583a75a1fdd11dae73874a57c1d168ec161d3bf6ea5dcc7fef7e"
+    },
+    "recovery_pilot.py": {
+      "bytes": 23127,
+      "sha256": "f98d49ef94f843561bd10a4d72a08cdfadccb5f4919f6750396ad4d516c3d864"
+    },
+    "run_pems_bay_pipeline.py": {
+      "bytes": 19973,
+      "sha256": "8f270ed5e788ea7c27c7757fd5676f88abf5b1c1f4e9cc9201742639ecd791d1"
+    },
+    "state_value_pilot.py": {
+      "bytes": 20242,
+      "sha256": "26fcb23c98abbf54214d54e14a9b0e7c32c4691fd571c94e69462333ff9639b8"
+    },
+    "summarize_pems_bay_binding.py": {
+      "bytes": 8175,
+      "sha256": "0ebb2d27aef3a405159634a466c695be08b7d5036888712798214adf057f1276"
+    },
+    "summarize_pems_bay_calibration.py": {
+      "bytes": 9490,
+      "sha256": "c3bb6453aaab34df814cc5e8e1962080889aca45866839b9d3a4e819ae430d18"
+    },
+    "summarize_pems_bay_evaluation.py": {
+      "bytes": 13686,
+      "sha256": "bb44223afac68965e7f4c0650a63f05fb35cf3f5fd738f007f2ee347c79f3d28"
+    },
+    "summarize_pems_bay_forecaster.py": {
+      "bytes": 10044,
+      "sha256": "3fdec7965f18663a2d40c2045e779258eadf332be3322d1467e47edb5b6c1672"
+    },
+    "summarize_pems_bay_risk.py": {
+      "bytes": 6950,
+      "sha256": "6bca1025d45187407c651e5bf11c99d37713d3084285db3d08a1e8dd2c94090c"
+    },
+    "train_pems_bay_forecaster.py": {
+      "bytes": 11832,
+      "sha256": "3951647899d637870e75da583e2922fdea00a17eb39b5fdedaa23a22203cac0b"
+    },
+    "train_pems_bay_risk.py": {
+      "bytes": 16665,
+      "sha256": "65a00b83479b1eb3b09fdad0faeba7fb6bf2287c0ad390be2255a9b59a1ff4af"
+    },
+    "verify_pems_bay_binding.py": {
+      "bytes": 1498,
+      "sha256": "ec8622a910b48d7259da500cf9d458cd314ad4df7545b8a2ed64843e577878f9"
+    },
+    "reference_metrics.json": {
+      "bytes": 102648,
+      "sha256": "b17d15807e3de45b5a0cf9b9b3f53f10cf6501553d5a6e3e3779e9f728707bc6"
+    }
+  }
+}
