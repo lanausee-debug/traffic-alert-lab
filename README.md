@@ -8,6 +8,10 @@ Explore how risk supervision and alert thresholds trade earlier notifications ag
 
 **The predefined joint primary test did not pass.** The onset MLP has fewer false alerts but substantially lower event detection. This project does not establish a new neural architecture or overall service superiority.
 
+## Online deployment
+
+The repository includes a GitHub Pages workflow for the same aggregate explorer. Its deployment status appears under Actions. Enable **Settings → Pages → Source: GitHub Actions** once before the first deployment.
+
 ## Start without installing anything
 
 Download the repository and open `demo/index.html` in your browser. Select an input scenario and compare all seven methods across early warning, detection and false alerts. The page is self-contained and uses saved aggregate results. It contains no per-station observation series and makes no network requests.
@@ -82,6 +86,6 @@ This package contains code, aggregate research results and synthetic teaching in
 
 PEMS-BAY access originates from the [DCRNN authors' repository](https://github.com/liyaguang/DCRNN#data-preparation). Upstream software licensing does not serve as this project's permission to redistribute dataset files. See [data policy](DATA_POLICY.md) and [attribution](THIRD_PARTY_NOTICES.md).
 
-A project-wide code license has not yet been selected. Public visibility alone is not a project license grant. See [license status](CODE_LICENSE.md). Some older protocol documents describe their historical local preparation state; this README describes the current package capabilities.
+Project code and original documentation use the [MIT License](LICENSE). Data and third-party material keep the boundaries in [CODE_LICENSE.md](CODE_LICENSE.md). Older dated protocols describe their historical preparation state.
 
 Questions and reproducibility reports are welcome. See [contribution guidance](CONTRIBUTING.md). GitHub stars measure community interest, not algorithm originality or graduation eligibility.

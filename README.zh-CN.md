@@ -36,4 +36,8 @@ py -3.12 -m venv .venv
 
 原数据由使用者依照上游入口取得，不随仓库分发。统一入口在新目录执行18阶段，支持 `--resume` 和 `--verify-only`。已有一次本机完整流程与原结果数值一致，约22分钟是当时记录，不是运行时间保证。重跑已分析数据是工程复现，不能称新的独立确认。
 
-代码、汇总结果与教程可以阅读，项目级许可证尚待选择，未默认授予MIT等许可。详见 [CODE_LICENSE.md](CODE_LICENSE.md)、[数据范围](DATA_POLICY.md)和[来源说明](THIRD_PARTY_NOTICES.md)。学校论文、Word/PPT、真实回放窗口、数据、权重与缓存不在本公开包内。历史记录中的“尚未上传”等表述按其记录日期理解。
+项目代码和原创文档采用[MIT许可证](LICENSE)，数据与第三方材料保留原范围。详见 [CODE_LICENSE.md](CODE_LICENSE.md)、[数据范围](DATA_POLICY.md)和[来源说明](THIRD_PARTY_NOTICES.md)。学校论文、Word/PPT、真实回放窗口、数据、权重与缓存不在本公开包内。历史记录中的“尚未上传”等表述按其记录日期理解。
+
+## 在线部署
+
+已提供GitHub Pages部署工作流，首次需在 Settings / Pages 中将 Source 设为 GitHub Actions。部署成功与否以 Actions 记录为准。在线页使用同一份汇总结果，不包含逐站速度窗口。

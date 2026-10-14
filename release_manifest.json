@@ -1,12 +1,14 @@
 {
-  "stage": "github_code_results_release",
-  "client_date": "2026-10-13",
+  "stage": "mit_and_github_pages_release",
+  "client_date": "2026-10-14",
   "target_repository": "lanausee-debug/traffic-alert-lab",
   "raw_data_or_weights_included": false,
   "actual_station_time_series_included": false,
-  "project_wide_code_license_selected": false,
+  "project_wide_code_license_selected": true,
   "primary_metric_supported": false,
   "fresh_independent_validation": false,
+  "code_license": "MIT",
+  "dataset_redistribution_grant_included": false,
   "files": {
     ".gitattributes": {
       "bytes": 34,
@@ -16,29 +18,37 @@
       "bytes": 438,
       "sha256": "76264f09993642c2c7b05fdd3f92f4543f0d5303d30c3c96641035d324badb27"
     },
+    ".github/workflows/pages.yml": {
+      "bytes": 856,
+      "sha256": "10b14a7e8077bdb3ce19d5047eebbbd418e60f7c8eb8aba324746f3c3e353da1"
+    },
     ".gitignore": {
-      "bytes": 258,
-      "sha256": "3a1f332dc0814d6e38a36f25e791b57a62afc38e74a6eb79710aab068de467af"
+      "bytes": 267,
+      "sha256": "d7e345c1f05f13aea134274fc7480a50bacb3c9b8c8a5a532d52453d5ec214a7"
     },
     "CODE_LICENSE.md": {
-      "bytes": 496,
-      "sha256": "a7aafc9b08d55a3d24bc06823e35a945459ef20e45ec0c4666eb958e1561285e"
+      "bytes": 1005,
+      "sha256": "7b4ac419d83e22ed00e9fe6739b4d3d8be012b5f677fbf1db38d123ead30cbc4"
     },
     "CONTRIBUTING.md": {
-      "bytes": 665,
-      "sha256": "495500a0d089684ce39b9e79d1f02d3832ebc2008d83b8d6a7dc6262d1420550"
+      "bytes": 676,
+      "sha256": "cfe6f68f866d244e224b4a2f4144f214d0350cfcc5c2d144dffbd918f76543e4"
     },
     "DATA_POLICY.md": {
       "bytes": 681,
       "sha256": "9db9498fc67b00d12899d26c6b88cea67a75442da38500f665bfe73bfe35770e"
     },
+    "LICENSE": {
+      "bytes": 1071,
+      "sha256": "f0303fa6a0e6e67523b4143895b17f30fc4fd92cb7b2bcc38b33c8df680ce36d"
+    },
     "README.md": {
-      "bytes": 6570,
-      "sha256": "a708952dba2aeb39b1ac8c9ce2cef8e820b161acc2f4ea5f3bc78198c97cbf74"
+      "bytes": 6751,
+      "sha256": "196aa6e28b9002b39d265e1e24379f065890d51ffd501feea70532cace5eca1f"
     },
     "README.zh-CN.md": {
-      "bytes": 3112,
-      "sha256": "c761640c93f52b8a9390a09a1c2554eec82bdacdd2c715b0401e4e35e03cc5a2"
+      "bytes": 3345,
+      "sha256": "d1fd0905558d5712b6734d3f721fbd6c2c0b913ec66c820e7a1144d2f1da1b75"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 1031,
@@ -67,6 +77,10 @@
     "bind_pems_bay.py": {
       "bytes": 4359,
       "sha256": "8904cb646081792edba8ea2eee29f7d9badf3dfb1c961fa50c819e32bfe343d4"
+    },
+    "build_pages_site.py": {
+      "bytes": 1825,
+      "sha256": "6c8a17f81ecb9e733d839f001fef65b0d3b42036327e3d820e7f7413fbda2e10"
     },
     "build_thesis_experiment_draft.py": {
       "bytes": 12022,

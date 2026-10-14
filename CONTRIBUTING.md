@@ -4,4 +4,4 @@ For a bug, describe the command, Python/library versions, platform and smallest 
 
 Keep the saved reference experiment unchanged. Develop new hypotheses in a separate run with explicit data partitions. New model results need complete event metrics and a clear distinction between exploration and independent validation. Tests check package consistency and runner behavior, not scientific superiority.
 
-Code licensing is still pending; please open a discussion before proposing substantial redistributed code.
+Project code and original documentation use MIT. Keep notices and identify any third-party material in contributions.

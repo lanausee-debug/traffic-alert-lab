@@ -15,3 +15,5 @@ data/raw/
 /pipeline_seed/outputs/congestion-fine-grid-pilot/results.json
 
 /pipeline_seed/outputs/congestion-fine-grid-pilot/selection.json
+
+/_site/

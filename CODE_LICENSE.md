@@ -1,5 +1,7 @@
-# Code license status
+# Code and documentation license
 
-A project-wide code license has not yet been selected. No MIT, Apache or other project-wide grant is asserted by this release. Third-party dependencies keep their own licenses. A license may be added in a separately reviewed update by the repository owner.
+The project's code and original documentation are licensed under the [MIT License](LICENSE), copyright 2026 lanausee-debug. Keep the copyright and permission notice with copies or substantial portions.
 
-See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository for GitHub's description of public visibility and repository licensing.
+The grant does not relicense upstream traffic datasets, third-party material, or the data/provenance/reference records in `data/`, `outputs/`, `reference_records/`, `verification/`, `pipeline_seed/data/` and `pipeline_seed/outputs/`. Their source and evaluation role remain described in [DATA_POLICY.md](DATA_POLICY.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Embedded aggregate values in the demonstration are research records, not an authorization to redistribute the underlying dataset.
+
+Dependencies retain their own licenses. This project does not distribute the PEMS-BAY HDF5 file, trained weights, station time-series windows, or dependency implementations. Older dated preparation notes describe the license status at the time they were written.
