@@ -1,9 +1,26 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Traffic Alert Lab · Results</title>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Traffic Alert Lab · 在线告警实验室</title>
 <style>
 :root{color-scheme:light;--ink:#15314c;--teal:#137c83;--muted:#546779;--line:#dce5ea}*{box-sizing:border-box}body{margin:0;background:#f5f8fa;color:var(--ink);font:17px/1.55 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:42px 24px 70px}h1{font-size:42px;line-height:1.1;margin:10px 0}h2{font-size:26px}p{max-width:960px}.subtitle{color:var(--muted)}a{color:var(--teal)}.conclusion{border-left:5px solid #9c3d29;padding:10px 20px;background:#fff;margin:25px 0}label{font-weight:700}select{font:inherit;padding:9px;border:1px solid var(--line);border-radius:4px;margin:6px 20px 6px 0;background:#fff;color:var(--ink)}.controls{display:flex;gap:24px;flex-wrap:wrap;margin:24px 0}.scroll{overflow-x:auto;background:white}table{border-collapse:collapse;width:100%;min-width:850px}th,td{padding:15px 16px;border-bottom:1px solid var(--line);text-align:left}th{background:var(--ink);color:white;font-size:15px}td:first-child{font-weight:600}td:last-child{font-variant-numeric:tabular-nums}.onset{background:#e8f4f3}.track{height:8px;background:#e7edf1;display:block;min-width:90px;margin-top:7px}.fill{height:100%;display:block;background:var(--teal)}.footnote{font-size:14px;color:var(--muted)}.definitions{background:white;padding:22px;margin-top:25px}.definitions dt{font-weight:700;margin-top:14px}.definitions dd{margin-left:0;color:var(--muted)}.comparison{font-size:20px}footer{margin-top:35px;font-size:14px;color:var(--muted)}@media(max-width:640px){h1{font-size:34px}main{padding:28px 16px}.controls{gap:10px}}
+.lab{background:white;border:1px solid #dce5ea;border-radius:18px;padding:30px;margin:28px 0 50px;box-shadow:0 8px 26px #15314c08}.lab h2{font-size:32px;margin:18px 0 8px}.lab-top,.lab-actions,.lab-settings{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.lab-top{justify-content:space-between}.eyebrow{font-size:12px;font-weight:800;letter-spacing:1.2px;color:#137c83}.pill{font-size:12px;background:#e8f4f3;padding:6px 10px;border-radius:99px}.lab button,.file-label{font:600 15px system-ui;padding:11px 16px;border:1px solid #137c83;background:#137c83;color:#fff;border-radius:8px;cursor:pointer}.lab button:hover,.file-label:hover{filter:brightness(.94)}.lab button.secondary{background:#fff;color:#137c83}.lab button:disabled{opacity:.45;cursor:default}.file-label input{display:block;width:210px;font:12px system-ui;margin-top:5px}.file-label{padding:7px 12px}.lab-actions{margin:22px 0}.lab-settings{align-items:flex-start;margin:20px 0;gap:24px}.lab-settings label{font-size:14px}.lab-settings select{display:block;margin:8px 0}.lab input[type=number]{display:block;width:150px;padding:9px;border:1px solid #dce5ea;border-radius:6px;font:inherit;margin-top:8px}.threshold-label{flex:1;min-width:240px}.threshold-label input{display:block;width:100%;accent-color:#137c83;margin-top:18px}.threshold-label output{float:right;font-size:21px;color:#137c83}.lab details{border-top:1px solid #dce5ea;padding:14px 0;margin-top:16px}.lab summary{cursor:pointer;font-weight:650}.lab textarea{display:block;width:100%;font:13px/1.6 ui-monospace,monospace;padding:12px;border:1px solid #ccd9e1;border-radius:8px;margin-top:8px}.metric-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:22px 0}.metric-cards>div{background:#f1f7f7;border:1px solid #e1ecec;border-radius:10px;padding:17px 14px}.metric-cards span,.metric-cards small{display:block;font-size:13px;color:#546779}.metric-cards strong{display:block;font-size:31px;color:#137c83;line-height:1.4}.metric-cards small{font-size:12px}.chart-frame{overflow:auto;border:1px solid #e1ecec;border-radius:10px;background:#fbfdfd}.chart-frame svg{display:block;width:100%;min-width:600px;height:auto}.lab-note{font-size:13px;line-height:1.7;background:#fff8ed;padding:14px;border-radius:8px;color:#765630;margin-top:24px}.lab-error{background:#fff0eb;color:#8f3224;padding:14px;border-radius:8px}.lab-table th,.lab-table td{font-size:13px;padding:12px}.lab a{font-weight:600}.lab [hidden]{display:none!important}:focus-visible{outline:3px solid #e0a952;outline-offset:3px}@media(max-width:720px){.lab{padding:20px 14px}.lab h2{font-size:26px}.metric-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.lab-top{align-items:flex-start}.pill{border-radius:6px}.lab-settings{gap:14px}.metric-cards strong{font-size:27px}}
+
 </style></head><body><main>
 <a href="../README.md">Repository guide</a><h1>Traffic Alert Lab</h1><p class="subtitle">Missing observations, risk calibration and event-level congestion alerts</p>
+<section id="online-lab" class="lab" aria-label="在线告警实验室">
+  <div class="lab-top"><span class="eyebrow">ONLINE ALERT LAB / 在线告警实验室</span><span class="pill">无需安装 · 文件在浏览器内处理</span></div>
+  <h2>调一调阈值，看清误报与漏报</h2>
+  <p class="subtitle">先试玩合成示例，或导入自己的模型分数。这里实时计算事件指标；下方保留原论文的冻结结果。</p>
+  <div class="lab-actions"><button id="lab-demo" type="button">载入合成示例</button><label class="file-label">选择 CSV<input id="lab-file" type="file" accept=".csv,text/csv" aria-label="选择 CSV 文件"></label><button id="lab-sample" class="secondary" type="button">下载示例 CSV</button></div>
+  <div class="lab-settings"><label>示例情景<select id="lab-preset" aria-label="示例情景"><option value="standard">完整分数</option><option value="outage">一次分数中断</option><option value="noisy">额外干扰高分</option></select></label><label class="threshold-label">告警阈值 <output id="lab-threshold-value">0.50</output><input id="lab-threshold" aria-label="告警阈值" type="range" min="0.05" max="0.95" step="0.05" value="0.50"></label></div>
+  <details><summary>CSV 内容与采样设置</summary><p class="footnote">四列：station_id、timestamp、score、is_event。时间须带秒与时区；空分数或空真值表示未知。网页版限制 2 MiB、20,000 行。<a href="../docs/csv_evaluation.zh-CN.md">查看指标协议</a></p><label>CSV 内容<textarea id="lab-csv" rows="7" spellcheck="false" aria-label="CSV 内容"></textarea></label><div class="lab-settings"><label>采样间隔（分钟）<input id="lab-step" type="number" min="1" value="5"></label><label>关联窗口（分钟）<input id="lab-horizon" type="number" min="0" value="15"></label><label>提前要求（分钟）<input id="lab-early" type="number" min="0" value="10"></label></div><button id="lab-run" type="button">评测当前 CSV</button></details>
+  <p id="lab-status" role="status" aria-live="polite"></p><p id="lab-error" role="alert" class="lab-error" hidden></p>
+  <div id="lab-results" hidden><div class="metric-cards"><div><span>事件检出率</span><strong id="lab-detection">—</strong><small>包含迟报</small></div><div><span>提前召回</span><strong id="lab-recall">—</strong><small id="lab-early-label">至少提前10分钟</small></div><div><span>误报告警</span><strong id="lab-false">—</strong><small id="lab-false-rate"></small></div><div><span>可评测事件</span><strong id="lab-events">—</strong><small id="lab-missed"></small></div></div>
+  <label>图示站点<select id="lab-station" aria-label="图示站点"></select></label><div class="chart-frame"><svg id="lab-chart" viewBox="0 0 1000 280" role="img" aria-label="风险分数、事件真值和告警时刻"></svg></div><p class="footnote">绿色区域：事件真值 · 青色折线：风险分数 · 虚线：阈值 · 圆点：新告警。图只显示所选站点前240个点，指标计算覆盖全部输入。时间轴统一为 UTC。</p>
+  <p id="lab-audit" class="footnote"></p><div class="lab-actions"><button id="lab-json" type="button" class="secondary" disabled>下载完整 JSON</button><button id="lab-html" type="button" class="secondary" disabled>下载 HTML 报告</button></div>
+  <details><summary>查看事件配对</summary><div class="scroll"><table class="lab-table"><thead><tr><th>站点</th><th>事件起点（UTC）</th><th>首次告警（UTC）</th><th>提前量 / 分钟</th></tr></thead><tbody id="lab-event-rows"></tbody></table></div><p class="footnote">页面最多列出200个事件，完整记录请下载JSON。</p></details></div>
+  <p class="lab-note">合成示例的分数是预设教学输入，网页不运行 PyTorch 模型。调阈值属于探索，正式测试前需在独立校准集固定阈值。这个通用协议与论文的代理提前量和有效站日规则不同，不能替换论文结果。</p>
+</section><h2 id="research-results">原论文：七方法与三情景的冻结结果</h2>
+
 <div class="conclusion"><strong>The predefined joint primary test did not pass.</strong><br>The onset MLP reduces false alerts and also detects substantially fewer events. A larger early-warning estimate does not establish overall service improvement.</div>
 <p id="scope"></p>
 <div class="controls"><label>Input scenario<br><select id="scenario" aria-label="Input scenario"><option value="mean">Equal mean of three scenarios</option><option value="natural">Natural observations</option><option value="single_outage">Single-station input outage</option><option value="group_outage">Correlated three-station input outage</option></select></label><label>Sort methods by<br><select id="metric" aria-label="Sort methods by"><option value="default">Fixed method order</option><option value="warning_recall_at_least10">≥10-minute proxy warning recall</option><option value="detection_recall">Detection including late alerts</option><option value="false_per_valid_station_day">False alerts / valid station-day</option></select></label></div>
@@ -20,4 +37,321 @@ const FIELDS=['warning_recall_at_least10','warning_recall','detection_recall','f
 function values(method,scenario){if(scenario!=='mean')return DATA.methods[method].scenarios[scenario];const out={};for(const k of FIELDS)out[k]=DATA.scenarios.reduce((sum,s)=>sum+DATA.methods[method].scenarios[s][k],0)/DATA.scenarios.length;return out;}
 function render(){const scenario=document.getElementById('scenario').value,metric=document.getElementById('metric').value;const methods=Object.keys(DATA.methods);if(metric!=='default')methods.sort((a,b)=>(metric==='false_per_valid_station_day'?1:-1)*(values(a,scenario)[metric]-values(b,scenario)[metric]));const target=document.getElementById('rows');target.replaceChildren();for(const method of methods){const row=document.createElement('tr');if(method==='onset_mlp')row.className='onset';const name=document.createElement('td');name.textContent=DATA.methods[method].name;row.append(name);const v=values(method,scenario);for(const field of FIELDS){const td=document.createElement('td');const rate=v[field];td.textContent=field===FIELDS[3]?rate.toFixed(6):(rate*100).toFixed(2)+'%';if(field!==FIELDS[3]){const track=document.createElement('span'),fill=document.createElement('span');track.className='track';fill.className='fill';fill.style.width=(rate*100)+'%';track.append(fill);td.append(track);}row.append(td);}target.append(row);}document.getElementById('scope').textContent=`${DATA.nodes} selected stations, ${DATA.days} evaluation days and ${DATA.events} complete proxy events. Three input scenarios repeat this event set. The geographic network contains more stations than this evaluated subset.`;}
 document.getElementById('scenario').addEventListener('change',render);document.getElementById('metric').addEventListener('change',render);render();
+</script><script>
+/* Browser/Node implementation of traffic-alert-csv-v1. No network or storage. */
+(function (root) {
+  'use strict';
+  const MAX_ROWS = 20000;
+  const iso = value => new Date(value).toISOString().replace('.000Z', '+00:00');
+  function timestamp(text) {
+    const match = text.match(/^(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2}):(\d{2})(Z|[+-]\d{2}:\d{2})$/);
+    if (!match) throw Error('时间需带秒和时区，例如 2020-01-01T08:00:00+08:00');
+    const [, year, month, day, hour, minute, second, offset] = match;
+    const parts = [year, month, day, hour, minute, second].map(Number);
+    const date = new Date(0);
+    date.setUTCFullYear(parts[0], parts[1] - 1, parts[2]);
+    date.setUTCHours(parts[3], parts[4], parts[5], 0);
+    const actual = [date.getUTCFullYear(), date.getUTCMonth() + 1, date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds()];
+    if (parts[0] < 1 || parts.some((value, i) => value !== actual[i])) throw Error('无效日期或时间');
+    let minutes = 0;
+    if (offset !== 'Z') {
+      const hours = Number(offset.slice(1, 3)), mins = Number(offset.slice(4));
+      if (hours > 23 || mins > 59) throw Error('无效时区偏移');
+      minutes = (hours * 60 + mins) * (offset[0] === '-' ? -1 : 1);
+    }
+    const result = date.getTime() - minutes * 60000;
+    if (new Date(result).getUTCFullYear() < 1 || new Date(result).getUTCFullYear() > 9999) throw Error('时间超出范围');
+    return result;
+  }
+  function parseCSV(text) {
+    if (typeof text !== 'string' || text.length > 2 * 1024 * 1024) throw Error('网页版限制 2 MiB 文本、20,000 行');
+    text = text.replace(/^\uFEFF/, '');
+    const table = [];
+    let row = [], field = '', quoted = false, closed = false;
+    function endField() { row.push(field); field = ''; closed = false; }
+    function endRow() {
+      endField();
+      if (!(row.length === 1 && row[0] === '')) table.push(row);
+      row = [];
+      if (table.length > MAX_ROWS + 1) throw Error('网页版最多 20,000 行数据');
+    }
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      if (quoted) {
+        if (ch === '"') {
+          if (text[i + 1] === '"') { field += '"'; i++; }
+          else { quoted = false; closed = true; }
+        } else field += ch;
+      } else if (ch === ',') endField();
+      else if (ch === '\r' || ch === '\n') { if (ch === '\r' && text[i + 1] === '\n') i++; endRow(); }
+      else if (ch === '"' && field === '' && !closed) quoted = true;
+      else if (closed || ch === '"') throw Error('CSV 引号格式错误');
+      else field += ch;
+    }
+    if (quoted) throw Error('CSV 引号没有闭合');
+    if (field || row.length || closed) endRow();
+    if (table.length < 2) throw Error('CSV 没有数据');
+    const header = table.shift();
+    if (new Set(header).size !== header.length) throw Error('CSV 列名不能重复');
+    const required = ['station_id', 'timestamp', 'score', 'is_event'];
+    const indexes = required.map(name => header.indexOf(name));
+    if (indexes.some(index => index < 0)) throw Error('CSV 需要 station_id,timestamp,score,is_event 四列');
+    return table.map((cells, index) => {
+      try {
+        if (cells.length !== header.length) throw Error('列数与表头不一致');
+        const [station_id, time, scoreText, label] = indexes.map(i => cells[i].trim());
+        if (!station_id) throw Error('站点编号不能为空');
+        if (!['', '0', '1'].includes(label)) throw Error('is_event 只能为 0、1 或空白');
+        if (scoreText && !/^[+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?$/.test(scoreText)) throw Error('score 必须为数值或空白');
+        const score = scoreText === '' ? null : Number(scoreText);
+        if (score !== null && (!Number.isFinite(score) || score < 0 || score > 1)) throw Error('score 必须在 0 到 1 之间');
+        return {station_id, time: timestamp(time), score, is_event: label === '' ? null : Number(label)};
+      } catch (error) { throw Error(`数据记录 ${index + 1}：${error.message}`); }
+    });
+  }
+  function compareText(a, b) {
+    const left = Array.from(a, ch => ch.codePointAt(0)), right = Array.from(b, ch => ch.codePointAt(0));
+    for (let i = 0; i < Math.min(left.length, right.length); i++) if (left[i] !== right[i]) return left[i] - right[i];
+    return left.length - right.length;
+  }
+  function evaluate(rows, settings = {}) {
+    const {threshold = 0.5, step_minutes = 5, horizon_minutes = 15, early_minutes = 10} = settings;
+    if (!Number.isFinite(threshold) || threshold < 0 || threshold > 1) throw Error('阈值需在 0 到 1 之间');
+    if (!Number.isInteger(step_minutes) || step_minutes <= 0 || !Number.isInteger(horizon_minutes) || horizon_minutes < 0 || horizon_minutes % step_minutes || !Number.isInteger(early_minutes) || early_minutes < 0 || early_minutes > horizon_minutes) throw Error('步长需为正整数；关联窗口需为步长的倍数；提前要求不能超过窗口');
+    if (!rows.length || rows.length > MAX_ROWS) throw Error('数据行数应为 1 到 20,000');
+    const ordered = [...rows].sort((a, b) => compareText(a.station_id, b.station_id) || a.time - b.time);
+    const segments = [];
+    let segment = [], previous = null, gaps = 0, unknown = 0, missing = 0;
+    for (const row of ordered) {
+      const same = previous !== null && row.station_id === previous.station_id;
+      const delta = same ? row.time - previous.time : null;
+      if (same && (delta <= 0 || delta % (step_minutes * 60000))) throw Error('时间重复或不符合该站点的采样网格');
+      const gap = same && delta !== step_minutes * 60000;
+      gaps += Number(gap);
+      if (!same || gap || row.is_event === null) { if (segment.length) segments.push(segment); segment = []; }
+      unknown += Number(row.is_event === null);
+      missing += Number(row.score === null);
+      if (row.is_event !== null) segment.push(row);
+      previous = row;
+    }
+    if (segment.length) segments.push(segment);
+    const horizon = horizon_minutes / step_minutes, events = [], alerts = [], excluded = [];
+    let ticks = 0, falseAlarms = 0, duplicates = 0, excludedAlerts = 0;
+    for (const part of segments) {
+      const n = part.length, runs = [];
+      for (let i = 0; i < n; i++) {
+        if (part[i].is_event === 0) continue;
+        const start = i;
+        while (i + 1 < n && part[i + 1].is_event === 1) i++;
+        const end = i, eligible = start > 0 && end < n - 1 && start >= horizon && end + horizon < n;
+        const run = {start, end, eligible, event: null};
+        if (eligible) {
+          run.event = {station_id: part[0].station_id, onset: iso(part[start].time), end: iso(part[end].time), first_alert: null, lead_minutes: null};
+          events.push(run.event);
+        } else excluded.push({station_id: part[0].station_id, onset: iso(part[start].time), end: iso(part[end].time), reason: 'boundary event or insufficient known horizon context'});
+        runs.push(run);
+      }
+      const eligible = part.map((_, i) => i + horizon < n && !runs.some(run => !run.eligible && run.start - horizon <= i && i <= run.end));
+      ticks += eligible.filter(Boolean).length;
+      let active = null;
+      part.forEach((row, i) => {
+        if (row.score === null) { active = null; return; }
+        if (row.score < threshold) { active = false; return; }
+        if (active === true) return;
+        const leftCensored = active === null;
+        active = true;
+        if (leftCensored || !eligible[i]) {
+          excludedAlerts++;
+          alerts.push({station_id: row.station_id, timestamp: iso(row.time), status: 'excluded', reason: 'unknown episode start or ineligible context'});
+          return;
+        }
+        const candidate = runs.find(run => run.eligible && run.start - horizon <= i && i <= run.end);
+        let status, matched = null;
+        if (!candidate) { falseAlarms++; status = 'false_alarm'; }
+        else {
+          matched = candidate.event;
+          if (matched.first_alert === null) {
+            matched.first_alert = iso(row.time);
+            matched.lead_minutes = (part[candidate.start].time - row.time) / 60000;
+            status = 'matched';
+          } else { duplicates++; status = 'duplicate'; }
+        }
+        alerts.push({station_id: row.station_id, timestamp: iso(row.time), status, event_onset: matched ? matched.onset : null});
+      });
+    }
+    const detected = events.filter(e => e.first_alert !== null).length;
+    const early = events.filter(e => e.lead_minutes !== null && e.lead_minutes >= early_minutes).length;
+    const exposure = ticks * step_minutes / 1440;
+    return {protocol: 'traffic-alert-csv-v1', synthetic: false,
+      settings: {threshold, step_minutes, horizon_minutes, early_minutes},
+      metrics: {eligible_events: events.length, detected_events: detected, early_events: early,
+        event_detection_rate: events.length ? detected / events.length : null, early_event_recall: events.length ? early / events.length : null,
+        false_alarm_episodes: falseAlarms, duplicate_alert_episodes: duplicates, eligible_station_days: exposure,
+        false_alarms_per_eligible_station_day: exposure ? falseAlarms / exposure : null},
+      audit: {rows: rows.length, stations: new Set(rows.map(row => row.station_id)).size, known_segments: segments.length,
+        sampling_gaps: gaps, unknown_label_rows: unknown, missing_score_rows: missing, excluded_event_runs: excluded.length,
+        excluded_alert_episodes: excludedAlerts, eligible_decision_ticks: ticks},
+      events, alerts, excluded_event_runs: excluded,
+      limitations: ['Evaluation-only labels must never be model inputs.',
+        'Use a threshold frozen on separate calibration data; this tool does not select it.',
+        'A sustained positive episode can match only its earliest compatible event.',
+        'Generic timestamp lead has no thesis-specific +one-step offset.',
+        'Rates pool event counts and eligible exposure across stations; zero denominators return null.']};
+  }
+  root.TrafficCSV = {parseCSV, evaluate, timestamp};
+})(globalThis);
+
+(function () {
+  'use strict';
+  const $ = id => document.getElementById('lab-' + id);
+  const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  let result = null, parsed = [], synthetic = true, runVersion = 0;
+  const originalDate = Date.UTC(2020, 0, 1);
+  function demoCSV(preset = 'standard') {
+    const scores = new Map([[9,.58],[17,.65],[18,.75],[19,.82],[20,.86],[21,.84],[22,.8],[23,.68],[24,.55],
+      [34,.46],[44,.8],[45,.85],[46,.84],[47,.78],[48,.7],[49,.6],[59,.46],[60,.48],[61,.52],[62,.82],[63,.86],[64,.84],[65,.76],[66,.65]]);
+    if (preset === 'noisy') { scores.set(31,.88); scores.set(54,.78); scores.set(73,.91); }
+    const lines = ['station_id,timestamp,score,is_event'];
+    for (let i = 0; i < 80; i++) {
+      const score = preset === 'outage' && i >= 17 && i <= 23 ? '' : (scores.get(i) ?? .12);
+      const truth = Number((i >= 20 && i <= 24) || (i >= 45 && i <= 49) || (i >= 62 && i <= 66));
+      lines.push(`synthetic-A,${new Date(originalDate + i * 300000).toISOString().replace('.000Z','Z')},${score},${truth}`);
+    }
+    return lines.join('\n') + '\n';
+  }
+  function invalidate() {
+    runVersion++; result = null;
+    $('json').disabled = $('html').disabled = true;
+    $('results').hidden = true;
+  }
+  function download(text, name, type) {
+    const url = URL.createObjectURL(new Blob([text], {type}));
+    const link = document.createElement('a');
+    link.href = url; link.download = name; document.body.append(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+  function chart() {
+    if (!result) return;
+    const station = $('station').value;
+    const rows = parsed.filter(row => row.station_id === station).sort((a,b) => a.time-b.time).slice(0,240);
+    if (!rows.length) { $('chart').innerHTML = ''; return; }
+    const left = 55, right = 975, top = 22, bottom = 225;
+    const origin = rows[0].time, end = Math.max(rows.at(-1).time, origin + result.settings.step_minutes * 60000);
+    const x = time => left + (time - origin) / (end - origin) * (right - left);
+    const y = score => bottom - score * (bottom - top);
+    const step = result.settings.step_minutes * 60000;
+    let svg = `<rect x="0" y="0" width="1000" height="280" fill="#fbfdfd"/>`;
+    for (const row of rows) if (row.is_event === 1) {
+      const width = Math.max(1, x(Math.min(end, row.time + step)) - x(row.time));
+      svg += `<rect x="${x(row.time)}" y="${top}" width="${width}" height="${bottom-top}" fill="#bfe3ce"/>`;
+    }
+    for (const value of [0,.5,1]) svg += `<line x1="${left}" y1="${y(value)}" x2="${right}" y2="${y(value)}" stroke="#dce5ea"/><text x="40" y="${y(value)+4}" text-anchor="end" font-size="12" fill="#546779">${value.toFixed(1)}</text>`;
+    svg += `<line x1="${left}" y1="${y(result.settings.threshold)}" x2="${right}" y2="${y(result.settings.threshold)}" stroke="#a7772d" stroke-dasharray="7 5"/>`;
+    let path = '', last = null;
+    for (const row of rows) {
+      if (row.score === null) { last = null; continue; }
+      path += `${last !== null && row.time-last === step ? 'L' : 'M'}${x(row.time).toFixed(2)},${y(row.score).toFixed(2)} `;
+      last = row.time;
+    }
+    svg += `<path d="${path}" fill="none" stroke="#137c83" stroke-width="2.5"/>`;
+    for (const alert of result.alerts) {
+      const time = Date.parse(alert.timestamp);
+      if (alert.station_id !== station || time < origin || time > end || alert.status === 'excluded') continue;
+      const row = rows.find(row => row.time === time);
+      const color = alert.status === 'false_alarm' ? '#be5f31' : alert.status === 'duplicate' ? '#788591' : '#137c83';
+      svg += `<circle cx="${x(time)}" cy="${y(row.score)}" r="5" fill="${color}" stroke="white" stroke-width="1.5"/>`;
+    }
+    for (let tick=0;tick<5;tick++) {
+      const time=origin+(end-origin)*tick/4;
+      const label=new Date(time).toISOString().slice(5,16).replace('T',' ');
+      svg+=`<text x="${x(time)}" y="250" font-size="12" fill="#546779" text-anchor="middle">${label}</text>`;
+    }
+    $('chart').innerHTML=svg;
+  }
+  function render() {
+    const metrics=result.metrics, audit=result.audit;
+    const percent = value => value === null ? '无分母' : (100*value).toFixed(1)+'%';
+    $('detection').textContent=percent(metrics.event_detection_rate);
+    $('recall').textContent=percent(metrics.early_event_recall);
+    $('early-label').textContent=`至少提前${result.settings.early_minutes}分钟`;
+    $('false').textContent=metrics.false_alarm_episodes;
+    $('false-rate').textContent=metrics.false_alarms_per_eligible_station_day===null?'无有效曝光':metrics.false_alarms_per_eligible_station_day.toFixed(3)+' 次 / 有效决策站日';
+    $('events').textContent=metrics.eligible_events;
+    $('missed').textContent=`漏报 ${metrics.eligible_events-metrics.detected_events} 个事件`;
+    $('audit').textContent=`${audit.rows} 行 · ${audit.stations} 站 · 时间缺口 ${audit.sampling_gaps} · 未知标签 ${audit.unknown_label_rows} · 缺失分数 ${audit.missing_score_rows} · 排除事件段 ${audit.excluded_event_runs} · 排除告警 ${audit.excluded_alert_episodes} · 重复告警 ${metrics.duplicate_alert_episodes} · 有效决策站日 ${metrics.eligible_station_days.toFixed(4)}`;
+    const selection=$('station').value;
+    $('station').replaceChildren();
+    for (const station of new Set(parsed.map(row=>row.station_id))) {
+      const option=document.createElement('option');option.value=station;option.textContent=station;$('station').append(option);
+    }
+    if ([...$('station').options].some(option=>option.value===selection)) $('station').value=selection;
+    $('event-rows').replaceChildren();
+    for (const event of result.events.slice(0,200)) {
+      const row=document.createElement('tr');
+      for (const value of [event.station_id,event.onset,event.first_alert ?? '未检出',event.lead_minutes ?? '—']) {
+        const td=document.createElement('td');td.textContent=value;row.append(td);
+      }
+      $('event-rows').append(row);
+    }
+    $('results').hidden=false;
+    $('json').disabled=$('html').disabled=false;
+    chart();
+  }
+  async function run() {
+    const version=++runVersion;
+    result=null;$('json').disabled=$('html').disabled=true;$('results').hidden=true;$('error').hidden=true;
+    $('threshold-value').textContent=Number($('threshold').value).toFixed(2);
+    try {
+      const text=$('csv').value;
+      if (['step','horizon','early'].some(name=>$(name).value.trim()==='')) throw Error('请填写全部采样设置');
+      parsed=TrafficCSV.parseCSV(text);
+      const next=TrafficCSV.evaluate(parsed,{threshold:Number($('threshold').value),step_minutes:Number($('step').value),horizon_minutes:Number($('horizon').value),early_minutes:Number($('early').value)});
+      next.synthetic=synthetic;
+      next.threshold_status='exploratory; caller must freeze threshold on separate calibration data for formal evaluation';
+      next.input_sha256=null;
+      if (globalThis.crypto?.subtle) {
+        const digest=await globalThis.crypto.subtle.digest('SHA-256',new TextEncoder().encode(text));
+        next.input_sha256=Array.from(new Uint8Array(digest),value=>value.toString(16).padStart(2,'0')).join('');
+      }
+      if(version!==runVersion)return;
+      result=next;render();
+      $('status').textContent=(synthetic?'合成教学示例':'用户 CSV · 探索性评测')+' · 浏览器内计算完成 · 未向服务器发送 CSV';
+    } catch(error) {
+      if(version!==runVersion)return;
+      $('status').textContent='未生成报告，请检查输入';$('error').textContent=error.message;$('error').hidden=false;
+    }
+  }
+  function loadDemo() {
+    invalidate();synthetic=true;$('preset').disabled=false;$('file').value='';
+    $('step').value='5';$('horizon').value='15';$('early').value='10';
+    $('csv').value=demoCSV($('preset').value);run();
+  }
+  $('demo').addEventListener('click',loadDemo);
+  $('preset').addEventListener('change',loadDemo);
+  $('threshold').addEventListener('input',run);
+  $('run').addEventListener('click',run);
+  $('station').addEventListener('change',chart);
+  $('csv').addEventListener('input',()=>{synthetic=false;$('preset').disabled=true;invalidate();$('status').textContent='内容已修改，点击“评测当前 CSV”更新结果';});
+  for(const name of ['step','horizon','early'])$(name).addEventListener('input',()=>{invalidate();$('status').textContent='设置已修改，请重新评测';});
+  $('file').addEventListener('change',async()=>{
+    invalidate();const file=$('file').files[0];if(!file)return;
+    const version=runVersion;
+    if(file.size>2*1024*1024){$('error').textContent='文件超过网页版 2 MiB 限制';$('error').hidden=false;return;}
+    try {
+      const text=await file.text();if(version!==runVersion)return;
+      synthetic=false;$('preset').disabled=true;$('csv').value=text;run();
+    }catch(error){$('error').textContent='无法读取文件：'+error.message;$('error').hidden=false;}
+  });
+  $('sample').addEventListener('click',()=>download(demoCSV(),'synthetic-alerts.csv','text/csv;charset=utf-8'));
+  $('json').addEventListener('click',()=>{if(result)download(JSON.stringify(result,null,2)+'\n','traffic-alert-report.json','application/json');});
+  $('html').addEventListener('click',()=>{
+    if(!result)return;
+    const metricRows=Object.entries(result.metrics).map(([key,value])=>`<tr><th>${escape(key)}</th><td>${escape(value)}</td></tr>`).join('');
+    const eventRows=result.events.map(event=>'<tr>'+[event.station_id,event.onset,event.first_alert ?? '未检出',event.lead_minutes ?? '—'].map(value=>`<td>${escape(value)}</td>`).join('')+'</tr>').join('');
+    const report=`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Traffic Alert Lab 报告</title><style>body{font:16px/1.6 system-ui;max-width:1100px;padding:24px;margin:auto;color:#15314c}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #dce5ea;text-align:left;overflow-wrap:anywhere}.scroll{overflow:auto}</style><h1>Traffic Alert Lab</h1><p>${result.synthetic?'合成教学示例':'用户 CSV'} · 探索性评测 · traffic-alert-csv-v1</p><p>正式测试须在独立校准集固定阈值。本报告与论文冻结协议不同，不代表模型服务优势。</p><p>设置：${escape(JSON.stringify(result.settings))}</p><p>输入文本 SHA-256：${escape(result.input_sha256 ?? '当前环境不支持计算')}</p><table>${metricRows}</table><h2>事件配对</h2><div class="scroll"><table><tr><th>站点</th><th>起点 UTC</th><th>首次告警 UTC</th><th>提前分钟</th></tr>${eventRows}</table></div><p>审计：${escape(JSON.stringify(result.audit))}</p><p>逐告警分类和排除事件详见配套 JSON。</p></html>`;
+    download(report,'traffic-alert-report.html','text/html;charset=utf-8');
+  });
+  loadDemo();
+})();
+
 </script></body></html>

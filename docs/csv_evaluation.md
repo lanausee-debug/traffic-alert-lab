@@ -16,6 +16,10 @@ For your own data, omit `--synthetic`:
 python alert_eval.py my_scores.csv --step-minutes 5 --horizon-minutes 15 --early-minutes 10 --threshold 0.5 --output runs/my-report
 ```
 
+## Browser entry
+
+[Online lab](https://lanausee-debug.github.io/traffic-alert-lab/#online-lab): choose or paste CSV, adjust exploratory settings and download reports. No CSV upload to a server. Browser limits: 2 MiB, 20,000 rows, whole-second timestamps with timezone (no fractional seconds); strict CSV quoting, unique headers and matching column counts. The Python CLI accepts a broader ISO timestamp syntax. UTF-8 file BOM is removed when decoding, and the browser report SHA hashes the decoded text as UTF-8, not necessarily the original file bytes. Python CLI SHA hashes the original bytes.
+
 ## CSV contract
 
 ```csv

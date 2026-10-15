@@ -18,3 +18,4 @@ jobs:
       - run: python verify_release.py
       - run: python build_thesis_experiment_draft.py --check
       - run: python -m unittest discover -s tests -p test_csv_alerts.py -v
+      - run: node tests/test_web_csv.mjs

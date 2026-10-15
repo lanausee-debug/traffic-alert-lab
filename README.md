@@ -10,6 +10,12 @@ Bring your own model scores. Measure event detection, early warning and false al
 
 The preview is a hand-checkable synthetic example, **not a research performance result**. CSV evaluation needs only Python 3.12 and the standard library. No traffic dataset download or trained weights are needed.
 
+## Use the online lab, no install
+
+Open the [online alert lab](https://lanausee-debug.github.io/traffic-alert-lab/#online-lab). It starts with a synthetic example. Change the threshold or input-outage preset, choose/paste your own CSV, inspect event matches and download JSON or HTML reports. Files are processed in your browser, with no upload endpoint or model server. The web limit is 2 MiB / 20,000 rows, with whole-second ISO timestamps including timezones. Larger inputs can use the Python CLI below.
+
+The browser evaluator follows `traffic-alert-csv-v1` and is checked against the Python implementation. Slider changes are exploratory; freeze settings on separate calibration data for formal testing. Example scores are predefined teaching inputs, not online neural inference. The original frozen research explorer remains below the lab.
+
 ## Try your first report
 
 ```bash

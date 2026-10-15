@@ -1,5 +1,5 @@
 {
-  "stage": "public_csv_evaluator_and_tiny_training",
+  "stage": "browser_csv_lab",
   "client_date": "2026-10-15",
   "target_repository": "lanausee-debug/traffic-alert-lab",
   "raw_data_or_weights_included": false,
@@ -13,14 +13,17 @@
   "generic_protocol": "traffic-alert-csv-v1",
   "teaching_training_added": true,
   "frozen_scientific_files_unchanged": true,
+  "browser_csv_processing": true,
+  "online_neural_training": false,
+  "embedded_research_aggregate_unchanged": true,
   "files": {
     ".gitattributes": {
       "bytes": 34,
       "sha256": "a1fcb27dda36a47d7493b3c705d087447d074a3573c76fd4c334fd77f1fbae66"
     },
     ".github/workflows/check.yml": {
-      "bytes": 513,
-      "sha256": "c57ec4ae4b26e1c78acce0cd2ac369b4d863315fc37bfe2b2caa6b8fd7ce20d9"
+      "bytes": 554,
+      "sha256": "0ee3828c3050d0f590d949165c57c10b8ea442c3a83ea5f5dabc22955cb2362d"
     },
     ".github/workflows/pages.yml": {
       "bytes": 856,
@@ -47,12 +50,12 @@
       "sha256": "f0303fa6a0e6e67523b4143895b17f30fc4fd92cb7b2bcc38b33c8df680ce36d"
     },
     "README.md": {
-      "bytes": 8424,
-      "sha256": "07797fbc1ab950b1012e7b0b48ad40ed887658c958228a8c4f0a2d9cd495e1ac"
+      "bytes": 9270,
+      "sha256": "df5b3955f8e2d1067fba54feffabbb006944f6350fa9d71316747cc92bb3eb9f"
     },
     "README.zh-CN.md": {
-      "bytes": 5070,
-      "sha256": "8e7ed04dafe20fb124ec1e2b82e3cdb56f5ee7c368d3fbf2d123c4b27d0d750a"
+      "bytes": 5773,
+      "sha256": "52b73d37d0699263f7d826d7154e3d87d323ea55b3944650b8fcd670a29c7ef8"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 1031,
@@ -138,17 +141,21 @@
       "bytes": 1086,
       "sha256": "5d677a8c9203f5d48242f650d878a7e6cee2af61ff65c8b710db4f9729d7e3d3"
     },
+    "demo/csv_engine.js": {
+      "bytes": 10102,
+      "sha256": "5a88c299384b812ce12eb16ec2a449be3c68e111d92fb44d03694f029d2335b4"
+    },
     "demo/index.html": {
-      "bytes": 11464,
-      "sha256": "a1a41fc27ab2e5f1230361741bdddec3b63dcd63bb97f23413157897d55e7e2f"
+      "bytes": 39527,
+      "sha256": "6b55cc2caba1fc50b4e5cb28289047f372ae3a6a67629ca65f6c663f078bac05"
     },
     "docs/congestion_stage8_findings.zh-CN.md": {
       "bytes": 5735,
       "sha256": "d80d3f63872481224d0e53ef4e9980fc220a115a81adcd7a770023712694f863"
     },
     "docs/csv_evaluation.md": {
-      "bytes": 5144,
-      "sha256": "774a99872e1819e2b1ec7dbd3c76ef59d57fe103cfeb538bd8830d318ab2f033"
+      "bytes": 5741,
+      "sha256": "57eb23769682c62d51f1a0c2deb8d41c50f5adc16f64d6279f83a879f7a33448"
     },
     "docs/csv_evaluation.zh-CN.md": {
       "bytes": 3182,
@@ -601,6 +608,14 @@
     "tests/test_pems_pipeline.py": {
       "bytes": 6639,
       "sha256": "65e24265dc1cfc5dddc89c0aab257248cb94c8d5c4b447178f707f94626a2263"
+    },
+    "tests/test_web_csv.mjs": {
+      "bytes": 5165,
+      "sha256": "12a92ce73659cfdb6bd230af9266555bad2f0ccdf843786c7b1d30aad64e1523"
+    },
+    "tests/web_csv_fixture.py": {
+      "bytes": 2512,
+      "sha256": "1d605aeeedb29fe2affafaa5e6a6c9530ab1c26851904026daad24390a16241c"
     },
     "train_pems_bay_forecaster.py": {
       "bytes": 11832,
