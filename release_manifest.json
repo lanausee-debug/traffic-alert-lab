@@ -1,6 +1,6 @@
 {
-  "stage": "mit_and_github_pages_release",
-  "client_date": "2026-10-14",
+  "stage": "mit_github_pages_live_entry",
+  "client_date": "2026-10-15",
   "target_repository": "lanausee-debug/traffic-alert-lab",
   "raw_data_or_weights_included": false,
   "actual_station_time_series_included": false,
@@ -9,6 +9,7 @@
   "fresh_independent_validation": false,
   "code_license": "MIT",
   "dataset_redistribution_grant_included": false,
+  "demo_url": "https://lanausee-debug.github.io/traffic-alert-lab/",
   "files": {
     ".gitattributes": {
       "bytes": 34,
@@ -43,12 +44,12 @@
       "sha256": "f0303fa6a0e6e67523b4143895b17f30fc4fd92cb7b2bcc38b33c8df680ce36d"
     },
     "README.md": {
-      "bytes": 6751,
-      "sha256": "196aa6e28b9002b39d265e1e24379f065890d51ffd501feea70532cace5eca1f"
+      "bytes": 6900,
+      "sha256": "cb89df137257bce23b6325b0d6e5df7309079597112e4910acbc03f540c8f404"
     },
     "README.zh-CN.md": {
-      "bytes": 3345,
-      "sha256": "d1fd0905558d5712b6734d3f721fbd6c2c0b913ec66c820e7a1144d2f1da1b75"
+      "bytes": 3480,
+      "sha256": "553fa3831aadd1ed2e29c2901252602471a29d47a98339b1303173f47998eb63"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 1031,

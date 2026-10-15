@@ -2,7 +2,7 @@
 
 交通速度观测缺失下的PyTorch预测、风险校准与事件告警实验。
 
-[English](README.md) · [交互结果](demo/index.html) · [从零运行](docs/pems_bay_pipeline_reproduction.zh-CN.md) · [PyTorch六步学习](docs/undergraduate_pytorch_learning.zh-CN.md)
+[English](README.md) · [在线演示](https://lanausee-debug.github.io/traffic-alert-lab/) · [离线查看](demo/index.html) · [从零运行](docs/pems_bay_pipeline_reproduction.zh-CN.md) · [PyTorch六步学习](docs/undergraduate_pytorch_learning.zh-CN.md)
 
 **预定联合主检验未通过。** 起点MLP误报较少，但含迟报检测明显下降，当前没有建立原创架构或整体服务优势。
 
@@ -40,4 +40,4 @@ py -3.12 -m venv .venv
 
 ## 在线部署
 
-已提供GitHub Pages部署工作流，首次需在 Settings / Pages 中将 Source 设为 GitHub Actions。部署成功与否以 Actions 记录为准。在线页使用同一份汇总结果，不包含逐站速度窗口。
+[直接打开在线演示](https://lanausee-debug.github.io/traffic-alert-lab/)，无需安装依赖。GitHub Pages展示同一份已核对的汇总结果，不包含逐站速度窗口，也不在线运行模型。main分支后续更新会触发部署，实际状态以Actions为准。

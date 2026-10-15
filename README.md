@@ -2,7 +2,7 @@
 
 **Missing traffic observations, PyTorch forecasting, and event-level congestion alerts.**
 
-[中文](README.zh-CN.md) · [Interactive results](demo/index.html) · [Reproduction guide](docs/pems_bay_pipeline_reproduction.zh-CN.md) · [PyTorch lesson](docs/undergraduate_pytorch_learning.zh-CN.md)
+[中文](README.zh-CN.md) · [Live demo](https://lanausee-debug.github.io/traffic-alert-lab/) · [Offline explorer](demo/index.html) · [Reproduction guide](docs/pems_bay_pipeline_reproduction.zh-CN.md) · [PyTorch lesson](docs/undergraduate_pytorch_learning.zh-CN.md)
 
 Explore how risk supervision and alert thresholds trade earlier notifications against missed events and false alarms. This repository includes a CPU training pipeline, frozen evaluation records, and a small synthetic tensor lesson.
 
@@ -10,7 +10,7 @@ Explore how risk supervision and alert thresholds trade earlier notifications ag
 
 ## Online deployment
 
-The repository includes a GitHub Pages workflow for the same aggregate explorer. Its deployment status appears under Actions. Enable **Settings → Pages → Source: GitHub Actions** once before the first deployment.
+Open the [live aggregate explorer](https://lanausee-debug.github.io/traffic-alert-lab/) without installing dependencies. GitHub Pages deploys the same verified static page after main-branch updates. The demonstration uses saved aggregate results, with no station time-series windows or model serving.
 
 ## Start without installing anything
 
