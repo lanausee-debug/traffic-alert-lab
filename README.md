@@ -1,29 +1,56 @@
 # Traffic Alert Lab
 
-**Missing traffic observations, PyTorch forecasting, and event-level congestion alerts.**
+**Evaluate traffic alerts beyond prediction error.**
 
-[中文](README.zh-CN.md) · [Live demo](https://lanausee-debug.github.io/traffic-alert-lab/) · [Offline explorer](demo/index.html) · [Reproduction guide](docs/pems_bay_pipeline_reproduction.zh-CN.md) · [PyTorch lesson](docs/undergraduate_pytorch_learning.zh-CN.md)
+Bring your own model scores. Measure event detection, early warning and false alarms, export an auditable report, or learn the whole workflow with a tiny CPU PyTorch model.
 
-Explore how risk supervision and alert thresholds trade earlier notifications against missed events and false alarms. This repository includes a CPU training pipeline, frozen evaluation records, and a small synthetic tensor lesson.
+[中文](README.zh-CN.md) · [Live research explorer](https://lanausee-debug.github.io/traffic-alert-lab/) · [CSV guide](docs/csv_evaluation.md) · [Training notebook](notebooks/tiny_training.ipynb) · [Open in Colab](https://colab.research.google.com/github/lanausee-debug/traffic-alert-lab/blob/main/notebooks/tiny_training.ipynb)
+
+![Synthetic example: two events, one early detection, one missed event and one false alert](docs/images/quickstart-preview.png)
+
+The preview is a hand-checkable synthetic example, **not a research performance result**. CSV evaluation needs only Python 3.12 and the standard library. No traffic dataset download or trained weights are needed.
+
+## Try your first report
+
+```bash
+python alert_eval.py examples/synthetic_alerts.csv --threshold 0.5 --synthetic --output runs/example-report
+```
+
+Open `runs/example-report/report.html`. The JSON report includes event matches, alert classifications, excluded boundaries and the input SHA-256. For your own four-column CSV (`station_id,timestamp,score,is_event`), replace the path and omit `--synthetic`. [Read the exact metric and timestamp rules](docs/csv_evaluation.md).
+
+```python
+from alert_eval import load_csv, evaluate, write_report
+
+result = evaluate(load_csv("my_scores.csv"), threshold=0.5)
+write_report(result, "runs/my-report")
+```
+
+Freeze your threshold on separate calibration data before evaluating. Scores must be available at their timestamp; labels are evaluation-only. The generic CSV protocol uses timestamp lead and conservative boundary rules; it is separate from the frozen thesis protocol below.
+
+## Train a tiny model on CPU
+
+```bash
+python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+python train_tiny_alert.py --output runs/tiny-first
+```
+
+The synthetic MLP performs 120 optimizer updates, selects a threshold on a separate calibration timeline, and exports test predictions and an event report. [Step-by-step PyTorch explanation](docs/tiny_training.zh-CN.md) · [Notebook](notebooks/tiny_training.ipynb). Local CPU notebook cells are verified; hosted Colab is an entry point, not a tested environment. Teaching outputs are not traffic benchmark evidence.
+
+## Explore the original research
+
+[Open the seven-method aggregate explorer](https://lanausee-debug.github.io/traffic-alert-lab/) or download the repo and open `demo/index.html`. This page uses saved aggregate results, with no station time-series windows or model serving.
 
 **The predefined joint primary test did not pass.** The onset MLP has fewer false alerts but substantially lower event detection. This project does not establish a new neural architecture or overall service superiority.
 
-## Online deployment
-
-Open the [live aggregate explorer](https://lanausee-debug.github.io/traffic-alert-lab/) without installing dependencies. GitHub Pages deploys the same verified static page after main-branch updates. The demonstration uses saved aggregate results, with no station time-series windows or model serving.
-
-## Start without installing anything
-
-Download the repository and open `demo/index.html` in your browser. Select an input scenario and compare all seven methods across early warning, detection and false alerts. The page is self-contained and uses saved aggregate results. It contains no per-station observation series and makes no network requests.
-
-To check the result tables with Python 3.12 and the standard library:
+Verify the frozen tables without training or traffic downloads:
 
 ```bash
 python verify_release.py
 python build_thesis_experiment_draft.py --check
+python -m unittest discover -s tests -p test_csv_alerts.py -v
 ```
 
-The first command also restores three large frozen JSON records from compressed files after checking their exact SHA-256 and original byte length. It refuses to replace changed existing records. These commands check saved result consistency, without reconstructing traffic events from raw data or retraining models.
+The release checker restores three compressed reference records after exact hash checks and refuses to overwrite changed records.
 
 ## What the experiment found
 
@@ -72,6 +99,9 @@ A previous complete run in the recorded environment matched the saved numerical 
 
 | Location | Purpose |
 | --- | --- |
+| `alert_eval.py` | Standard-library evaluator for your own score CSV |
+| `train_tiny_alert.py` | Actual CPU training on synthetic timelines |
+| `notebooks/tiny_training.ipynb` | Interactive training and report walkthrough |
 | `demo/index.html` | Offline aggregate result explorer |
 | `run_pems_bay_pipeline.py` | Isolated training, resume and verification entry |
 | `pipeline_seed/` | Exact source/config seed used by the recorded pipeline |

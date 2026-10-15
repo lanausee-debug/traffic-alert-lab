@@ -1,16 +1,47 @@
 # Traffic Alert Lab
 
-交通速度观测缺失下的PyTorch预测、风险校准与事件告警实验。
+**导入模型分数，评测交通告警：发现了多少、提前多久、误报多少。**
 
-[English](README.md) · [在线演示](https://lanausee-debug.github.io/traffic-alert-lab/) · [离线查看](demo/index.html) · [从零运行](docs/pems_bay_pipeline_reproduction.zh-CN.md) · [PyTorch六步学习](docs/undergraduate_pytorch_learning.zh-CN.md)
+支持自己的 CSV、可审计的事件报告和真正训练的小型 CPU PyTorch 教程。
+
+[English](README.md) · [在线研究演示](https://lanausee-debug.github.io/traffic-alert-lab/) · [CSV使用说明](docs/csv_evaluation.zh-CN.md) · [训练Notebook](notebooks/tiny_training.ipynb) · [Colab入口](https://colab.research.google.com/github/lanausee-debug/traffic-alert-lab/blob/main/notebooks/tiny_training.ipynb)
+
+![合成示例：两个事件、一个提前检出、一个漏报和一次误报](docs/images/quickstart-preview.png)
+
+预览来自可手算的合成示例，不是论文性能。通用评测只需要 Python 3.12 标准库，不用下载交通数据或模型。
+
+## 先生成一份报告
+
+```bash
+python alert_eval.py examples/synthetic_alerts.csv --threshold 0.5 --synthetic --output runs/example-report
+```
+
+打开 `runs/example-report/report.html`。JSON还保存逐事件匹配、告警分类、排除记录和输入SHA。自己的CSV准备 `station_id,timestamp,score,is_event` 四列，替换输入路径并去掉 `--synthetic` 即可。[格式与指标规则](docs/csv_evaluation.zh-CN.md)。每次使用新的输出目录。
+
+阈值要在独立校准集提前选好，分数必须在所填时刻已经可用于决策。真值只用于训练目标或评测。通用工具与论文冻结评测是两个协议，不能相互替换结果。
+
+## 真正训练一个小模型
+
+```bash
+python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+python train_tiny_alert.py --output runs/tiny-first
+```
+
+默认实际更新120次参数，合成训练、校准、测试使用独立时间序列。输出损失记录、预测CSV和事件报告。[逐步讲解PyTorch](docs/tiny_training.zh-CN.md)。Notebook代码单元已在本机CPU执行，Colab云端尚未实测。合成成绩不作为真实交通证据。
+
+## 查看和复现原研究
+
+[在线演示](https://lanausee-debug.github.io/traffic-alert-lab/)展示七方法、三情景的冻结汇总结果，离线也可打开 `demo/index.html`；没有在线模型推理或真实逐站窗口。
 
 **预定联合主检验未通过。** 起点MLP误报较少，但含迟报检测明显下降，当前没有建立原创架构或整体服务优势。
 
-## 三个入口
+```bash
+python verify_release.py
+python build_thesis_experiment_draft.py --check
+python -m unittest discover -s tests -p test_csv_alerts.py -v
+```
 
-1. 下载后双击 `demo/index.html`，不安装依赖，切换三种输入情景查看七种方法的汇总结果。页面离线运行，不含真实逐站时间序列。
-2. Python3.12运行 `python verify_release.py` 和 `python build_thesis_experiment_draft.py --check`，核对包内来源、冻结数值与表格。第一条会按SHA与字节数还原三份压缩的大型参考JSON，拒绝覆盖已改动的记录。该核对不重建原始事件。
-3. 安装研究依赖后运行 `python undergraduate_torch_demo.py --output runs/torch-lesson.json`，学习张量、mask与BCE梯度。练习随机初始化，只用合成输入，优化器更新为0，不把教学损失当研究成绩。
+这些命令核对冻结文件、结果和通用工具；不会重训论文模型。哈希核对后自动还原三份压缩参考JSON，不覆盖已改动记录。原来的[张量与反向传播课](docs/undergraduate_pytorch_learning.zh-CN.md)仍保留，它与新增实际训练课不同，更新次数为0。
 
 ## 原实验结果
 

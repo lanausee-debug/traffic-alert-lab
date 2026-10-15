@@ -1,5 +1,5 @@
 {
-  "stage": "mit_github_pages_live_entry",
+  "stage": "public_csv_evaluator_and_tiny_training",
   "client_date": "2026-10-15",
   "target_repository": "lanausee-debug/traffic-alert-lab",
   "raw_data_or_weights_included": false,
@@ -10,14 +10,17 @@
   "code_license": "MIT",
   "dataset_redistribution_grant_included": false,
   "demo_url": "https://lanausee-debug.github.io/traffic-alert-lab/",
+  "generic_protocol": "traffic-alert-csv-v1",
+  "teaching_training_added": true,
+  "frozen_scientific_files_unchanged": true,
   "files": {
     ".gitattributes": {
       "bytes": 34,
       "sha256": "a1fcb27dda36a47d7493b3c705d087447d074a3573c76fd4c334fd77f1fbae66"
     },
     ".github/workflows/check.yml": {
-      "bytes": 438,
-      "sha256": "76264f09993642c2c7b05fdd3f92f4543f0d5303d30c3c96641035d324badb27"
+      "bytes": 513,
+      "sha256": "c57ec4ae4b26e1c78acce0cd2ac369b4d863315fc37bfe2b2caa6b8fd7ce20d9"
     },
     ".github/workflows/pages.yml": {
       "bytes": 856,
@@ -44,16 +47,20 @@
       "sha256": "f0303fa6a0e6e67523b4143895b17f30fc4fd92cb7b2bcc38b33c8df680ce36d"
     },
     "README.md": {
-      "bytes": 6900,
-      "sha256": "cb89df137257bce23b6325b0d6e5df7309079597112e4910acbc03f540c8f404"
+      "bytes": 8424,
+      "sha256": "07797fbc1ab950b1012e7b0b48ad40ed887658c958228a8c4f0a2d9cd495e1ac"
     },
     "README.zh-CN.md": {
-      "bytes": 3480,
-      "sha256": "553fa3831aadd1ed2e29c2901252602471a29d47a98339b1303173f47998eb63"
+      "bytes": 5070,
+      "sha256": "8e7ed04dafe20fb124ec1e2b82e3cdb56f5ee7c368d3fbf2d123c4b27d0d750a"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 1031,
       "sha256": "24baf3a11c25289ddecc33695eea73c6b7fe6c04cc157b160170f86375ada36e"
+    },
+    "alert_eval.py": {
+      "bytes": 13496,
+      "sha256": "d3278f652f6d5a5c982040a24045f3799525f7a99db250f436c2b0061c6f6d69"
     },
     "audit_pems_bay_calibration.py": {
       "bytes": 19251,
@@ -139,9 +146,21 @@
       "bytes": 5735,
       "sha256": "d80d3f63872481224d0e53ef4e9980fc220a115a81adcd7a770023712694f863"
     },
+    "docs/csv_evaluation.md": {
+      "bytes": 5144,
+      "sha256": "774a99872e1819e2b1ec7dbd3c76ef59d57fe103cfeb538bd8830d318ab2f033"
+    },
+    "docs/csv_evaluation.zh-CN.md": {
+      "bytes": 3182,
+      "sha256": "23751a3d1b385c50a53c98d698d4f7c87fbaed37d864abf55c18bbb0da562953"
+    },
     "docs/github_reproduction.zh-CN.md": {
       "bytes": 6937,
       "sha256": "627f251f1d443710dcada84f349494319a15e4a092cd00d0b846f5ec8f7fc94e"
+    },
+    "docs/images/quickstart-preview.png": {
+      "bytes": 27423,
+      "sha256": "8dfdfdfa6d786885bd925954a6a80c9235cd912ce690e6d33b5c0867ddc42b5c"
     },
     "docs/pems_bay_calibration_protocol.zh-CN.md": {
       "bytes": 3559,
@@ -187,6 +206,10 @@
       "bytes": 5280,
       "sha256": "336e3823d370d5461f000abaea24f5c5c7f2ad1fae66d10f1eebd9bfdb1a33d7"
     },
+    "docs/tiny_training.zh-CN.md": {
+      "bytes": 2746,
+      "sha256": "2ea65d343f9e1929730350a282d41e5067b8b18b492c22b504e9966e455ae5b3"
+    },
     "docs/undergraduate_pytorch_learning.zh-CN.md": {
       "bytes": 8399,
       "sha256": "459d0263bc53f75b0ffbd55c2ee237bd39b90fde1285055d2302b7377409543b"
@@ -198,6 +221,10 @@
     "evaluate_pems_bay_alerts.py": {
       "bytes": 10051,
       "sha256": "b16e3d1f799b79e03f158e7fd8d9dad08614c57a4674fcc944ed430249c31160"
+    },
+    "examples/synthetic_alerts.csv": {
+      "bytes": 1837,
+      "sha256": "3a745a3eb1369fc8f16810eb24addad88d98f59fb4e3e92a9d30cb6ddb63320a"
     },
     "fetch_pems_bay.py": {
       "bytes": 4505,
@@ -218,6 +245,10 @@
     "multifault_pilot.py": {
       "bytes": 23001,
       "sha256": "fb58e0a078ba955687d8e41275e82539e8e354ba51b8b290f3e92fd98ebc9697"
+    },
+    "notebooks/tiny_training.ipynb": {
+      "bytes": 5254,
+      "sha256": "654a469d4d6cb3a3fa2dde7af35ce716379118c46263ea7cb7dde6cd31e5890c"
     },
     "outputs/pems-bay-evaluation/audit.json": {
       "bytes": 2416,
@@ -563,6 +594,10 @@
       "bytes": 6950,
       "sha256": "6bca1025d45187407c651e5bf11c99d37713d3084285db3d08a1e8dd2c94090c"
     },
+    "tests/test_csv_alerts.py": {
+      "bytes": 6166,
+      "sha256": "5cbd096e59bc0582ad78e4aaa7fc2f6bf98975a4733b0864db685c7f48c4a491"
+    },
     "tests/test_pems_pipeline.py": {
       "bytes": 6639,
       "sha256": "65e24265dc1cfc5dddc89c0aab257248cb94c8d5c4b447178f707f94626a2263"
@@ -574,6 +609,10 @@
     "train_pems_bay_risk.py": {
       "bytes": 16665,
       "sha256": "65a00b83479b1eb3b09fdad0faeba7fb6bf2287c0ad390be2255a9b59a1ff4af"
+    },
+    "train_tiny_alert.py": {
+      "bytes": 5795,
+      "sha256": "d9117abaca33c69e6bd8bbcfad20630767ddc7dcfcc1ffaf39416b48a44f30a6"
     },
     "undergraduate_torch_demo.py": {
       "bytes": 5152,
